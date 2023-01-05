@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title> - My New Hugo Site</title><meta name="Description" content="This is my cool site"><meta property="og:title" content="" />
+<meta property="og:description" content="介紹好用工具：Win 10 內建的 PackageManagement 套件管理器 (OneGet) [[開發工具以及環境設置]]
+如何在 Windows 命令提示字元下使用 Linux 常見的 touch 命令 介紹好用工具：Pandoc ( 萬用的文件轉換器 ) 我想拿它來轉檔，包括題庫的檔案
+如何修正 PowerShell 執行龜速的元兇 (關閉進度列提示) 如何在 PowerShell 中加入鍵盤快速鍵並模擬 Linux shell 下的操作體驗 如何下載與升級 SQL Server Express LocalDB 到最新版 開發者必學的多語言輸入法設定技巧：使用 Windows PowerShell 快速建立 透過 7-Zip 壓縮 ZIP 檔案時須注意中文檔名無法正確解壓縮的問題 Windows Terminal Preview https://www.microsoft.com/zh-tw/p/windows-terminal-preview/9n8g5rfz9xk3?rtc=1#activetab=pivot:regionofsystemrequirementstab" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://example.org/posts/%E5%A5%BD%E7%94%A8%E5%B7%A5%E5%85%B7/" /><meta property="article:section" content="posts" />
+
+<meta property="og:site_name" content="My cool site" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content=""/>
+<meta name="twitter:description" content="介紹好用工具：Win 10 內建的 PackageManagement 套件管理器 (OneGet) [[開發工具以及環境設置]]
+如何在 Windows 命令提示字元下使用 Linux 常見的 touch 命令 介紹好用工具：Pandoc ( 萬用的文件轉換器 ) 我想拿它來轉檔，包括題庫的檔案
+如何修正 PowerShell 執行龜速的元兇 (關閉進度列提示) 如何在 PowerShell 中加入鍵盤快速鍵並模擬 Linux shell 下的操作體驗 如何下載與升級 SQL Server Express LocalDB 到最新版 開發者必學的多語言輸入法設定技巧：使用 Windows PowerShell 快速建立 透過 7-Zip 壓縮 ZIP 檔案時須注意中文檔名無法正確解壓縮的問題 Windows Terminal Preview https://www.microsoft.com/zh-tw/p/windows-terminal-preview/9n8g5rfz9xk3?rtc=1#activetab=pivot:regionofsystemrequirementstab"/>
+<meta name="application-name" content="My cool site">
+<meta name="apple-mobile-web-app-title" content="My cool site"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://example.org/posts/%E5%A5%BD%E7%94%A8%E5%B7%A5%E5%85%B7/" /><link rel="prev" href="http://example.org/posts/%E5%A6%82%E4%BD%95%E5%81%9A%E5%A5%BD%E5%9C%98%E9%9A%8A%E5%BB%BA%E8%A8%AD%E6%9C%89%E6%95%88%E6%8C%87%E5%B0%8E%E4%B8%8B%E5%B1%AC%E7%9A%84%E5%B7%A5%E4%BD%9C/" /><link rel="next" href="http://example.org/posts/%E5%8F%96%E5%9B%9E%E6%88%AA%E5%9C%96%E7%9A%84-chrome-headless-%E6%8C%87%E4%BB%A4/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "",
+        "inLanguage": "en",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "http:\/\/example.org\/posts\/%E5%A5%BD%E7%94%A8%E5%B7%A5%E5%85%B7\/"
+        },"genre": "posts","wordcount":  48 ,
+        "url": "http:\/\/example.org\/posts\/%E5%A5%BD%E7%94%A8%E5%B7%A5%E5%85%B7\/","publisher": {
+            "@type": "Organization",
+            "name": ""},"author": {
+                "@type": "Person",
+                "name": "Peter"
+            },"description": ""
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="My New Hugo Site">My cool site</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> Posts </a><a class="menu-item" href="/tags/"> Tags </a><a class="menu-item" href="/categories/"> Categories </a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="My New Hugo Site">My cool site</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><a class="menu-item" href="/posts/" title="">Posts</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/categories/" title="">Categories</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a></div>
+    </div>
+</header><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX"></h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="https://www.knsh.com.tw" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Peter</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="0001-01-01">0001-01-01</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;48 words&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;One minute&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  data-kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#介紹好用工具win-10-內建的-packagemanagement-套件管理器-onegethttpsblogminiaspcompost20160219useful-tool-packagemanagement-oneget"><a href="https://blog.miniasp.com/post/2016/02/19/Useful-tool-PackageManagement-OneGet">介紹好用工具：Win 10 內建的 PackageManagement 套件管理器 (OneGet)</a></a></li>
+    <li><a href="#如何在-windows-命令提示字元下使用-linux-常見的-touch-命令httpsblogminiaspcompost20170122useful-tool-touch-command-on-windows"><a href="https://blog.miniasp.com/post/2017/01/22/Useful-tool-touch-command-on-Windows">如何在 Windows 命令提示字元下使用 Linux 常見的 touch 命令</a></a></li>
+    <li><a href="#介紹好用工具pandoc--萬用的文件轉換器-httpsblogminiaspcompost20181006useful-tool-pandoc-universal-document-converter"><a href="https://blog.miniasp.com/post/2018/10/06/Useful-tool-Pandoc-universal-document-converter">介紹好用工具：Pandoc ( 萬用的文件轉換器 )</a></a></li>
+    <li><a href="#如何修正-powershell-執行龜速的元兇-關閉進度列提示httpsblogminiaspcompost20190111progresspreference-slow-down-powershell-execution"><a href="https://blog.miniasp.com/post/2019/01/11/ProgressPreference-slow-down-powershell-execution">如何修正 PowerShell 執行龜速的元兇 (關閉進度列提示)</a></a></li>
+    <li><a href="#如何在-powershell-中加入鍵盤快速鍵並模擬-linux-shell-下的操作體驗httpsblogminiaspcompost20191211windows-powershell-psreadline"><a href="https://blog.miniasp.com/post/2019/12/11/Windows-PowerShell-PSReadline">如何在 PowerShell 中加入鍵盤快速鍵並模擬 Linux shell 下的操作體驗</a></a></li>
+    <li><a href="#如何下載與升級-sql-server-express-localdb-到最新版httpsblogminiaspcompost20200216install-and-upgrade-sql-server-express-localdb"><a href="https://blog.miniasp.com/post/2020/02/16/install-and-upgrade-sql-server-express-localdb">如何下載與升級 SQL Server Express LocalDB 到最新版</a></a></li>
+    <li><a href="#開發者必學的多語言輸入法設定技巧使用-windows-powershell-快速建立httpsblogminiaspcompost20200319devs-must-setup-multi-language-input-method"><a href="https://blog.miniasp.com/post/2020/03/19/Devs-must-setup-multi-language-input-method">開發者必學的多語言輸入法設定技巧：使用 Windows PowerShell 快速建立</a></a></li>
+    <li><a href="#透過-7-zip-壓縮-zip-檔案時須注意中文檔名無法正確解壓縮的問題httpsblogminiaspcompost202009147-zip-with-chinese-filenames-should-use-utf-8"><a href="https://blog.miniasp.com/post/2020/09/14/7-Zip-with-Chinese-filenames-should-use-UTF-8">透過 7-Zip 壓縮 ZIP 檔案時須注意中文檔名無法正確解壓縮的問題</a></a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h2 id="介紹好用工具win-10-內建的-packagemanagement-套件管理器-onegethttpsblogminiaspcompost20160219useful-tool-packagemanagement-oneget"><a href="https://blog.miniasp.com/post/2016/02/19/Useful-tool-PackageManagement-OneGet" target="_blank" rel="noopener noreffer ">介紹好用工具：Win 10 內建的 PackageManagement 套件管理器 (OneGet)</a></h2>
+<p>[[開發工具以及環境設置]]</p>
+<h2 id="如何在-windows-命令提示字元下使用-linux-常見的-touch-命令httpsblogminiaspcompost20170122useful-tool-touch-command-on-windows"><a href="https://blog.miniasp.com/post/2017/01/22/Useful-tool-touch-command-on-Windows" target="_blank" rel="noopener noreffer ">如何在 Windows 命令提示字元下使用 Linux 常見的 touch 命令</a></h2>
+<h2 id="介紹好用工具pandoc--萬用的文件轉換器-httpsblogminiaspcompost20181006useful-tool-pandoc-universal-document-converter"><a href="https://blog.miniasp.com/post/2018/10/06/Useful-tool-Pandoc-universal-document-converter" target="_blank" rel="noopener noreffer ">介紹好用工具：Pandoc ( 萬用的文件轉換器 )</a></h2>
+<p>我想拿它來轉檔，包括題庫的檔案</p>
+<h2 id="如何修正-powershell-執行龜速的元兇-關閉進度列提示httpsblogminiaspcompost20190111progresspreference-slow-down-powershell-execution"><a href="https://blog.miniasp.com/post/2019/01/11/ProgressPreference-slow-down-powershell-execution" target="_blank" rel="noopener noreffer ">如何修正 PowerShell 執行龜速的元兇 (關閉進度列提示)</a></h2>
+<h2 id="如何在-powershell-中加入鍵盤快速鍵並模擬-linux-shell-下的操作體驗httpsblogminiaspcompost20191211windows-powershell-psreadline"><a href="https://blog.miniasp.com/post/2019/12/11/Windows-PowerShell-PSReadline" target="_blank" rel="noopener noreffer ">如何在 PowerShell 中加入鍵盤快速鍵並模擬 Linux shell 下的操作體驗</a></h2>
+<h2 id="如何下載與升級-sql-server-express-localdb-到最新版httpsblogminiaspcompost20200216install-and-upgrade-sql-server-express-localdb"><a href="https://blog.miniasp.com/post/2020/02/16/install-and-upgrade-sql-server-express-localdb" target="_blank" rel="noopener noreffer ">如何下載與升級 SQL Server Express LocalDB 到最新版</a></h2>
+<h2 id="開發者必學的多語言輸入法設定技巧使用-windows-powershell-快速建立httpsblogminiaspcompost20200319devs-must-setup-multi-language-input-method"><a href="https://blog.miniasp.com/post/2020/03/19/Devs-must-setup-multi-language-input-method" target="_blank" rel="noopener noreffer ">開發者必學的多語言輸入法設定技巧：使用 Windows PowerShell 快速建立</a></h2>
+<h2 id="透過-7-zip-壓縮-zip-檔案時須注意中文檔名無法正確解壓縮的問題httpsblogminiaspcompost202009147-zip-with-chinese-filenames-should-use-utf-8"><a href="https://blog.miniasp.com/post/2020/09/14/7-Zip-with-Chinese-filenames-should-use-UTF-8" target="_blank" rel="noopener noreffer ">透過 7-Zip 壓縮 ZIP 檔案時須注意中文檔名無法正確解壓縮的問題</a></h2>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://store-images.s-microsoft.com/image/apps.12708.14050269303149694.4480b6be-58cb-4cf0-8200-854dc40e6773.a2d18651-aa0a-4a78-b9dc-6f3953393878?mode=scale&amp;q=90&amp;h=300&amp;w=200"
+        data-srcset="https://store-images.s-microsoft.com/image/apps.12708.14050269303149694.4480b6be-58cb-4cf0-8200-854dc40e6773.a2d18651-aa0a-4a78-b9dc-6f3953393878?mode=scale&amp;q=90&amp;h=300&amp;w=200, https://store-images.s-microsoft.com/image/apps.12708.14050269303149694.4480b6be-58cb-4cf0-8200-854dc40e6773.a2d18651-aa0a-4a78-b9dc-6f3953393878?mode=scale&amp;q=90&amp;h=300&amp;w=200 1.5x, https://store-images.s-microsoft.com/image/apps.12708.14050269303149694.4480b6be-58cb-4cf0-8200-854dc40e6773.a2d18651-aa0a-4a78-b9dc-6f3953393878?mode=scale&amp;q=90&amp;h=300&amp;w=200 2x"
+        data-sizes="auto"
+        alt="https://store-images.s-microsoft.com/image/apps.12708.14050269303149694.4480b6be-58cb-4cf0-8200-854dc40e6773.a2d18651-aa0a-4a78-b9dc-6f3953393878?mode=scale&amp;q=90&amp;h=300&amp;w=200"
+        title="https://store-images.s-microsoft.com/image/apps.12708.14050269303149694.4480b6be-58cb-4cf0-8200-854dc40e6773.a2d18651-aa0a-4a78-b9dc-6f3953393878?mode=scale&amp;q=90&amp;h=300&amp;w=200" /></p>
+<h1 id="windows-terminal-preview">Windows Terminal Preview</h1>
+<p><a href="https://www.microsoft.com/zh-tw/p/windows-terminal-preview/9n8g5rfz9xk3?rtc=1#activetab=pivot:regionofsystemrequirementstab" target="_blank" rel="noopener noreffer ">https://www.microsoft.com/zh-tw/p/windows-terminal-preview/9n8g5rfz9xk3?rtc=1#activetab=pivot:regionofsystemrequirementstab</a></p>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 0001-01-01</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="http://example.org/posts/%E5%A5%BD%E7%94%A8%E5%B7%A5%E5%85%B7/" data-title=""><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="http://example.org/posts/%E5%A5%BD%E7%94%A8%E5%B7%A5%E5%85%B7/"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Hacker News" data-sharer="hackernews" data-url="http://example.org/posts/%E5%A5%BD%E7%94%A8%E5%B7%A5%E5%85%B7/" data-title=""><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="http://example.org/posts/%E5%A5%BD%E7%94%A8%E5%B7%A5%E5%85%B7/" data-title=""><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@7.3.0/icons/line.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="http://example.org/posts/%E5%A5%BD%E7%94%A8%E5%B7%A5%E5%85%B7/" data-title=""><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/posts/%E5%A6%82%E4%BD%95%E5%81%9A%E5%A5%BD%E5%9C%98%E9%9A%8A%E5%BB%BA%E8%A8%AD%E6%9C%89%E6%95%88%E6%8C%87%E5%B0%8E%E4%B8%8B%E5%B1%AC%E7%9A%84%E5%B7%A5%E4%BD%9C/" class="prev" rel="prev" title=""><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i></a>
+            <a href="/posts/%E5%8F%96%E5%9B%9E%E6%88%AA%E5%9C%96%E7%9A%84-chrome-headless-%E6%8C%87%E4%BB%A4/" class="next" rel="next" title=""><i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+</article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.109.0">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
+                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2022 - 2023</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="https://www.knsh.com.tw" target="_blank">Peter</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":50},"comment":{}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>

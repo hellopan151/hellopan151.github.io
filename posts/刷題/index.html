@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title> - My New Hugo Site</title><meta name="Description" content="This is my cool site"><meta property="og:title" content="" />
+<meta property="og:description" content="https://brianhsublog.blogspot.com/2020/12/AlgorithmDataStructureLeetCode.html?fbclid=IwAR3hdR64066cCdY2xwbb-J-7WtDYor8gGQ3ojJHylqv87Rh4j61jcucPBn8
+聽說你最近在刷題- 軟體工程師的面試一定會遇到的資料結構及演算法關卡 (&amp; 分享 LeetCode 折扣）&amp; LeetCode Premium 抽獎啦 (2021- 9 月更新） 2021年 9 月更新：
+從 8 月開始，收到許多剛到美國唸書的讀者來信請求幫忙內推 2022 年暑假的實習工作，如果你還不知道的話， 請查看我另外一篇文章來了解內推網路：最有效得到面試的方式- 內部推薦: 尋找內推資源 &amp; 歹晚郎互助網絡 (2021 年 8 月更新)。軟體工程師的面試關卡很多都是資料結構及演算法， 所以大家在準備實習也都不免俗的要刷題一下。 我許久沒有看 LeetCode， 發現現在 LeetCode 的功能越來越多， 還有像是學習資源文章及 study plan 的功能，把大家要準備面試的各種需求都越來越在他們網站上一站搞定。 今天除了再次分享去年寫的文章(還有折扣碼)， 還要大大感謝 LeetCode 願意提供 3 個 7 天 Premium 會員試用來給予讀者， 讓大家面試前可以使用如公司 tag 的功能來做複習。 此外感謝大家一直以來的支持， 我也自掏腰包提供購買 3 個 1 個月的 Premium 會員試用來加碼， 再請大家到這篇 FB 文章參加抽獎活動！
+2020 年 12 月原文：
+歐， 要澄清一下我現在沒有在刷題 (我這樣講絕對不是怕很多同事會看到我的文章 XD)， 說實在的， 我覺得大家好像太過度強調 “刷”題的刷， 好像刷油漆似的要來回刷很多遍。 我過往看過許多刷幾百題、每題做 2、3、4 次以上的人分享他們的經驗， 我很佩服他們投入的時間及毅力， 但我自知做不到， 有小孩後更是難以做到刷一遍。 我自己找軟體工程師的工作的經驗， 2015 年上完 Coding Bootcamp 到找到工作， 大概做了 60 題左右的 LeetCode 問題， 2016 年底找工作比較認真， 大概完成了 100 題左右。 今天這篇文章想要分享一下我的演算法準備方式， 如果你想要找如何刷題的方式，或是覺得無法刷幾百題很多遍的人， 歡迎往下閱讀。 2015 年上完 Coding Bootcamp 後， 我陸續有一些電話面試， 每天可能會有 1～3 個電話面試， 所以在準備面試上， 要研究公司， 並且依照職缺來做面試的複習， 因為我是面試前端相關的職缺， 所以也有一部分的精力在前端的資料複習。 關於資料結構及演算法 (Data Structures &amp; Algorithms) 的練習，我大概維持一天練習 1-2 題的步調。 2016 年底的面試， 因為還要上班， 所以基本上只有晚上有時間， 可能一天只能練習 1 題， 假日有比較多時間才可以多做幾題。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://example.org/posts/%E5%88%B7%E9%A1%8C/" /><meta property="article:section" content="posts" />
+
+<meta property="og:site_name" content="My cool site" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content=""/>
+<meta name="twitter:description" content="https://brianhsublog.blogspot.com/2020/12/AlgorithmDataStructureLeetCode.html?fbclid=IwAR3hdR64066cCdY2xwbb-J-7WtDYor8gGQ3ojJHylqv87Rh4j61jcucPBn8
+聽說你最近在刷題- 軟體工程師的面試一定會遇到的資料結構及演算法關卡 (&amp; 分享 LeetCode 折扣）&amp; LeetCode Premium 抽獎啦 (2021- 9 月更新） 2021年 9 月更新：
+從 8 月開始，收到許多剛到美國唸書的讀者來信請求幫忙內推 2022 年暑假的實習工作，如果你還不知道的話， 請查看我另外一篇文章來了解內推網路：最有效得到面試的方式- 內部推薦: 尋找內推資源 &amp; 歹晚郎互助網絡 (2021 年 8 月更新)。軟體工程師的面試關卡很多都是資料結構及演算法， 所以大家在準備實習也都不免俗的要刷題一下。 我許久沒有看 LeetCode， 發現現在 LeetCode 的功能越來越多， 還有像是學習資源文章及 study plan 的功能，把大家要準備面試的各種需求都越來越在他們網站上一站搞定。 今天除了再次分享去年寫的文章(還有折扣碼)， 還要大大感謝 LeetCode 願意提供 3 個 7 天 Premium 會員試用來給予讀者， 讓大家面試前可以使用如公司 tag 的功能來做複習。 此外感謝大家一直以來的支持， 我也自掏腰包提供購買 3 個 1 個月的 Premium 會員試用來加碼， 再請大家到這篇 FB 文章參加抽獎活動！
+2020 年 12 月原文：
+歐， 要澄清一下我現在沒有在刷題 (我這樣講絕對不是怕很多同事會看到我的文章 XD)， 說實在的， 我覺得大家好像太過度強調 “刷”題的刷， 好像刷油漆似的要來回刷很多遍。 我過往看過許多刷幾百題、每題做 2、3、4 次以上的人分享他們的經驗， 我很佩服他們投入的時間及毅力， 但我自知做不到， 有小孩後更是難以做到刷一遍。 我自己找軟體工程師的工作的經驗， 2015 年上完 Coding Bootcamp 到找到工作， 大概做了 60 題左右的 LeetCode 問題， 2016 年底找工作比較認真， 大概完成了 100 題左右。 今天這篇文章想要分享一下我的演算法準備方式， 如果你想要找如何刷題的方式，或是覺得無法刷幾百題很多遍的人， 歡迎往下閱讀。 2015 年上完 Coding Bootcamp 後， 我陸續有一些電話面試， 每天可能會有 1～3 個電話面試， 所以在準備面試上， 要研究公司， 並且依照職缺來做面試的複習， 因為我是面試前端相關的職缺， 所以也有一部分的精力在前端的資料複習。 關於資料結構及演算法 (Data Structures &amp; Algorithms) 的練習，我大概維持一天練習 1-2 題的步調。 2016 年底的面試， 因為還要上班， 所以基本上只有晚上有時間， 可能一天只能練習 1 題， 假日有比較多時間才可以多做幾題。"/>
+<meta name="application-name" content="My cool site">
+<meta name="apple-mobile-web-app-title" content="My cool site"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://example.org/posts/%E5%88%B7%E9%A1%8C/" /><link rel="prev" href="http://example.org/posts/%E5%8D%A1%E6%99%AE%E6%9B%BC%E6%88%B2%E5%8A%87%E4%B8%89%E8%A7%92/" /><link rel="next" href="http://example.org/posts/%E5%88%A9%E7%94%A8-chrome-%E5%8F%96-vimeo-%E7%9A%84%E6%88%AA%E5%9C%96%E7%9A%84%E5%91%BD%E4%BB%A4/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "",
+        "inLanguage": "en",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "http:\/\/example.org\/posts\/%E5%88%B7%E9%A1%8C\/"
+        },"genre": "posts","wordcount":  401 ,
+        "url": "http:\/\/example.org\/posts\/%E5%88%B7%E9%A1%8C\/","publisher": {
+            "@type": "Organization",
+            "name": ""},"author": {
+                "@type": "Person",
+                "name": "Peter"
+            },"description": ""
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="My New Hugo Site">My cool site</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> Posts </a><a class="menu-item" href="/tags/"> Tags </a><a class="menu-item" href="/categories/"> Categories </a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="My New Hugo Site">My cool site</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><a class="menu-item" href="/posts/" title="">Posts</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/categories/" title="">Categories</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a></div>
+    </div>
+</header><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX"></h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="https://www.knsh.com.tw" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Peter</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="0001-01-01">0001-01-01</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;401 words&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;2 minutes&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  data-kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#聽說你最近在刷題--軟體工程師的面試一定會遇到的資料結構及演算法關卡--分享-leetcode-折扣-leetcode-premium-抽獎啦-2021--9-月更新">聽說你最近在刷題- 軟體工程師的面試一定會遇到的資料結構及演算法關卡 (&amp; 分享 LeetCode 折扣）&amp; LeetCode Premium 抽獎啦 (2021- 9 月更新）</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><p><a href="https://brianhsublog.blogspot.com/2020/12/AlgorithmDataStructureLeetCode.html?fbclid=IwAR3hdR64066cCdY2xwbb-J-7WtDYor8gGQ3ojJHylqv87Rh4j61jcucPBn8" target="_blank" rel="noopener noreffer ">https://brianhsublog.blogspot.com/2020/12/AlgorithmDataStructureLeetCode.html?fbclid=IwAR3hdR64066cCdY2xwbb-J-7WtDYor8gGQ3ojJHylqv87Rh4j61jcucPBn8</a></p>
+<h3 id="聽說你最近在刷題--軟體工程師的面試一定會遇到的資料結構及演算法關卡--分享-leetcode-折扣-leetcode-premium-抽獎啦-2021--9-月更新">聽說你最近在刷題- 軟體工程師的面試一定會遇到的資料結構及演算法關卡 (&amp; 分享 LeetCode 折扣）&amp; LeetCode Premium 抽獎啦 (2021- 9 月更新）</h3>
+<p><a href="https://1.bp.blogspot.com/-3JAcmvpyP0A/X-0T74yNy7I/AAAAAAAByVI/J8SBJDl6nq8esXb1x6hLLQyPJyNKpn_ogCLcBGAsYHQ/s440/391c41361af542f79a7e8ba165d777bc_th.jpg" target="_blank" rel="noopener noreffer "><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://1.bp.blogspot.com/-3JAcmvpyP0A/X-0T74yNy7I/AAAAAAAByVI/J8SBJDl6nq8esXb1x6hLLQyPJyNKpn_ogCLcBGAsYHQ/s320/391c41361af542f79a7e8ba165d777bc_th.jpg"
+        data-srcset="https://1.bp.blogspot.com/-3JAcmvpyP0A/X-0T74yNy7I/AAAAAAAByVI/J8SBJDl6nq8esXb1x6hLLQyPJyNKpn_ogCLcBGAsYHQ/s320/391c41361af542f79a7e8ba165d777bc_th.jpg, https://1.bp.blogspot.com/-3JAcmvpyP0A/X-0T74yNy7I/AAAAAAAByVI/J8SBJDl6nq8esXb1x6hLLQyPJyNKpn_ogCLcBGAsYHQ/s320/391c41361af542f79a7e8ba165d777bc_th.jpg 1.5x, https://1.bp.blogspot.com/-3JAcmvpyP0A/X-0T74yNy7I/AAAAAAAByVI/J8SBJDl6nq8esXb1x6hLLQyPJyNKpn_ogCLcBGAsYHQ/s320/391c41361af542f79a7e8ba165d777bc_th.jpg 2x"
+        data-sizes="auto"
+        alt="https://1.bp.blogspot.com/-3JAcmvpyP0A/X-0T74yNy7I/AAAAAAAByVI/J8SBJDl6nq8esXb1x6hLLQyPJyNKpn_ogCLcBGAsYHQ/s320/391c41361af542f79a7e8ba165d777bc_th.jpg"
+        title="https://1.bp.blogspot.com/-3JAcmvpyP0A/X-0T74yNy7I/AAAAAAAByVI/J8SBJDl6nq8esXb1x6hLLQyPJyNKpn_ogCLcBGAsYHQ/s320/391c41361af542f79a7e8ba165d777bc_th.jpg" /></a></p>
+<p>2021年 9 月更新：</p>
+<p>從 8 月開始，收到許多剛到美國唸書的讀者來信請求幫忙內推 2022 年暑假的實習工作，如果你還不知道的話， 請查看我另外一篇文章來了解內推網路：<a href="https://brianhsublog.blogspot.com/2019/03/internalReferralAndTaiwanNetwork.html" target="_blank" rel="noopener noreffer ">最有效得到面試的方式- 內部推薦: 尋找內推資源 &amp; 歹晚郎互助網絡 (2021 年 8 月更新)</a>。軟體工程師的面試關卡很多都是資料結構及演算法， 所以大家在準備實習也都不免俗的要刷題一下。 我許久沒有看 LeetCode， 發現現在 LeetCode 的功能越來越多， 還有像是學習資源文章及 study plan 的功能，把大家要準備面試的各種需求都越來越在他們網站上一站搞定。 今天除了再次分享去年寫的文章(還有<a href="http://bit.ly/34UrjEe" target="_blank" rel="noopener noreffer ">折扣碼</a>)， 還要大大感謝 LeetCode 願意提供 3 個 7 天 Premium 會員試用來給予讀者， 讓大家面試前可以使用如公司 tag 的功能來做複習。 此外感謝大家一直以來的支持， 我也自掏腰包提供購買 3 個 1 個月的  Premium 會員試用來加碼， 再請大家到<a href="https://www.facebook.com/PivotSoftwareEngineer/posts/1351783535236833" target="_blank" rel="noopener noreffer ">這篇 FB 文章參加抽獎活動</a>！</p>
+<p>2020 年 12 月原文：</p>
+<p>歐， 要澄清一下我現在沒有在刷題 (我這樣講絕對不是怕很多同事會看到我的文章 XD)， 說實在的， 我覺得大家好像太過度強調 “刷”題的刷， 好像刷油漆似的要來回刷很多遍。 我過往看過許多刷幾百題、每題做 2、3、4 次以上的人分享他們的經驗， 我很佩服他們投入的時間及毅力， 但我自知做不到， 有小孩後更是難以做到刷一遍。 我自己找軟體工程師的工作的經驗， 2015 年上完 Coding Bootcamp 到找到工作， 大概做了 60 題左右的 LeetCode 問題， 2016 年底找工作比較認真， 大概完成了 100 題左右。 今天這篇文章想要分享一下我的演算法準備方式， 如果你想要找如何刷題的方式，或是覺得無法刷幾百題很多遍的人， 歡迎往下閱讀。 </p>
+<p>2015 年上完 Coding Bootcamp 後， 我陸續有一些電話面試， 每天可能會有 1～3 個電話面試， 所以在準備面試上， 要研究公司， 並且依照職缺來做面試的複習， 因為我是面試前端相關的職缺， 所以也有一部分的精力在前端的資料複習。 關於資料結構及演算法 (Data Structures &amp; Algorithms) 的練習，我大概維持一天練習 1-2 題的步調。 2016 年底的面試， 因為還要上班， 所以基本上只有晚上有時間， 可能一天只能練習 1 題， 假日有比較多時間才可以多做幾題。</p>
+<p>看到問題的時候， 我會先確保我了解題目的意思， 真正在面試的時候， 通常第一步也是和面試官確認我們自我的理解和面試官要問的是否一致， 不要花了時間才發現一開始的理解及假設是錯誤的。 我通常會立刻寫下題目給予的 input 有什麼、格式是什麼，  desired output 又是什麼。 </p>
+<p>確認好 input &amp; output 後， 我會思考題目可以用什麼類型的資料結構或是演算法來解。 通常在面試的時候， 我會和面試官說明我可能會先就一個大概可行的方式來做解答， 如果他/她覺得沒有什麼問題的話， 我再做後續的優化。 在我開始有一些思路後， 我會先寫下 pseudo code， 就是先用英文來說明我的解法會是怎麼樣。 每個步驟和面試官確認都沒有問題後， 我才會正式寫 code 。</p>
+<p>當然有些時候不論怎麼想都寫不出來， 如果是自己練習的時候，我大概在 15 分鐘後會開始看一些討論， 嘗試學習別人的思路， 但如果再花 10 分鐘還是解不出來的話， 才會參考別人的解法。 我看完別人的答案後， 還是會用自己的 code 再實現一次。 如果面試中卡住的話， 則是要儘快和面試官討論， 我會把我的理解， 可能的解法方式和面試官說， 同時也說明我的情況可能哪裏不是很確定， 讓面試官在適當的時候可以給予我提示。 一般來說， 公司都是希望有順利的面試經驗， 面試官也都願意在溝通正常下給予協助。 </p>
+<p>自己練習寫完之後， 我會再寫出解法的空間及時間複雜度 (Space &amp; Time Complexity) ， 通常面試也會詢問這個部分， 所以自己每個練習也要歸納一下。 如果我發現我的解法時間可能不是太好， 我會再嘗試看不同人的討論， 研究更優化的解法， 並再自己寫出不一樣的解法。 有些比較棘手的問題我可能會寫 2、3 個解法比較彼此的優缺點。 </p>
+<p>在之前準備面試的時候， 我有準備一本筆記本， 每次寫完問題之後， 我會用筆寫下我在哪一天寫了哪一個問題， 並且用很精簡的方式總結問題及解法。 隔天要做下一題之前， 我會先看一下前一天的問題， 嘗試回想我是否可以再次在頭腦中想出大致的解法。 如果還是不行的話， 再看我自己的總結並做上記號， 隔天會再做一次同樣的步驟，直到我可以順利複習出解題的邏輯思路。 </p>
+<p>如果有和公司面試， 不論是電話還是 onsite， 面試完後我會再檢查我遇到的題目是否和我過去做過的題目類似， 如果有的話， 是否我的思路在面試中是清晰及正確的， 如果沒有的話， 我是否有利用對的觀念來解答。 面試結束後， 會花時間在盤點及複習， 從面試中的題目和過往的練習做統整。</p>
+<p>你可以看到我的練習方式不是很強調快， 因為我希望我做完問題可以有很深的理解， 所以花很多時間在做整理、複習確認， 即使當下沒有那麼理解， 隔天回想又想不出的話， 我會再複習一次， 再隔一天做新題前也會再確認。 複習及思考的次數多了，真正把題目所想要考的觀念融會貫通， 畢竟面試很難真的遇到原題， 重點是我們對於資料結構及演算法的理解， 及遇到難題如何面對的應對的思考過程。 </p>
+<p>條條大路通羅馬， 每個人面試準備的方式都不太一樣， 以上就是我的資料結構及演算法的準備方式， 之前寫找工作的系列文章好像沒有特別提這塊， 所以特別再寫出來分享。當然我不是大神每次面試都可以收割 5 到 10 個以上 offer， 所以就請你自己斟酌評估你的學習方法，畢竟我們都要找到對自己最能接受、且有效率的方式來準備面試 。 </p>
+<p>我從 2015 、2016 年準備面試的時候， 有許多練習演算法的網站， 但到了今日， 好像 LeetCode 和練習演算法關係就如同  Google 和搜尋一樣， 大部分我聽到的準備面試的人都用 LeetCode 來做練習了！ 剛好最近認識一位在 LeetCode 工作的朋友牽線， LeetCode 特別優惠讀者， 只要<a href="http://bit.ly/34UrjEe" target="_blank" rel="noopener noreffer ">使用這個連結購買 Premium</a>， 就能有 15% 優惠 (幾乎和一年一度的感恩節特價差不多了！)。 </p>
+<p><a href="https://1.bp.blogspot.com/-HJleo9F_q-4/X-wxC2lcPEI/AAAAAAAByS8/Itzw1hMMsXUDLI99xWTyWMbjht6IA8sagCLcBGAsYHQ/s2048/Leetcode.png" target="_blank" rel="noopener noreffer "><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://1.bp.blogspot.com/-HJleo9F_q-4/X-wxC2lcPEI/AAAAAAAByS8/Itzw1hMMsXUDLI99xWTyWMbjht6IA8sagCLcBGAsYHQ/w421-h271/Leetcode.png"
+        data-srcset="https://1.bp.blogspot.com/-HJleo9F_q-4/X-wxC2lcPEI/AAAAAAAByS8/Itzw1hMMsXUDLI99xWTyWMbjht6IA8sagCLcBGAsYHQ/w421-h271/Leetcode.png, https://1.bp.blogspot.com/-HJleo9F_q-4/X-wxC2lcPEI/AAAAAAAByS8/Itzw1hMMsXUDLI99xWTyWMbjht6IA8sagCLcBGAsYHQ/w421-h271/Leetcode.png 1.5x, https://1.bp.blogspot.com/-HJleo9F_q-4/X-wxC2lcPEI/AAAAAAAByS8/Itzw1hMMsXUDLI99xWTyWMbjht6IA8sagCLcBGAsYHQ/w421-h271/Leetcode.png 2x"
+        data-sizes="auto"
+        alt="https://1.bp.blogspot.com/-HJleo9F_q-4/X-wxC2lcPEI/AAAAAAAByS8/Itzw1hMMsXUDLI99xWTyWMbjht6IA8sagCLcBGAsYHQ/w421-h271/Leetcode.png"
+        title="https://1.bp.blogspot.com/-HJleo9F_q-4/X-wxC2lcPEI/AAAAAAAByS8/Itzw1hMMsXUDLI99xWTyWMbjht6IA8sagCLcBGAsYHQ/w421-h271/Leetcode.png" /></a></p>
+<p>LeetCode 優惠頁面</p>
+<p> </p>
+<p>我目前聽到朋友準備面試基本上都會購買 <a href="http://bit.ly/34UrjEe" target="_blank" rel="noopener noreffer ">LeetCode 的 Premium</a>， Premium 最大的好處就是可以看到問題和公司的標註， 拿過去拒絕我 2 次的 Google 為例 (XD)， LeetCode 就有 925 道題目被大家回報有在 Google 面試中看到 (2021 年已經變成 1014 道了！ @@)， 當你正要 phone or onsite interview 的時候， 可以聚焦你要面試的公司練習、提高效率的話還是可以提高面試的表現的。 Premium 還有答題評斷比較快、LeetCode 官方解答、及依據公司有 Mock interviews 等其他功能， 但主要大家好像都還是為了 company tag 的功能而付費， (2021 年 9 月更新， 最近又有如文章、影片的學習資源，還有像是 Study Plan 的功能， 看起來 LeetCode 要往大家學習、準備、一站式的服務來黏住使用者了！)</p>
+<p>相信以大家拿到 offer 後的加薪， 會覺得這是個很好的投資！(什麼， 你說不一定會加薪， 那請你再閱讀一下我的談判文章來和公司談判加薪 &ldquo;<a href="https://brianhsublog.blogspot.com/2019/09/HowToAnswerSalaryExpectationInInterview.html" target="_blank" rel="noopener noreffer ">面試中談到錢怎麼辦？ 問到你期望薪水如何接招?</a>&rdquo; 及&quot;<a href="https://brianhsublog.blogspot.com/2019/10/HowToNegotiateJobOffer.html" target="_blank" rel="noopener noreffer ">面試得到 Offer 薪水如何談？ 三明治溝通法及最後簽約前的談判招式</a>&quot;) 。 </p>
+<p>我當初有想說要直播訪問在 LeetCode 的朋友， 探討 LeetCode 最近幾年的快速發展、及如何幫助軟體工程師及公司行號， 可惜目前朋友還沒有意願， 如果大家有興趣的話， 請在文章留言， 讓她可以看到大家的意願加強她的動力和我們分享 (群眾多數暴力啊！)。 </p>
+<p>附上過去我寫的找工作系列文章:</p>
+<p><a href="https://brianhsublog.blogspot.com/2015/08/googleoooxxx.html" target="_blank" rel="noopener noreffer ">1. 程式語言- 到底學哪個好？我想進Google，我沒學OOO，他們會接受我XXX語言背景嘛？</a></p>
+<p><a href="https://brianhsublog.blogspot.com/2015/08/blog-post_9.html" target="_blank" rel="noopener noreffer ">2. 簡介美國軟體工程師面試流程</a></p>
+<p><a href="https://brianhsublog.blogspot.com/2015/08/linkedin.html" target="_blank" rel="noopener noreffer ">3. 等待機緣- 我要如何被人資或獵人頭發現? 我要如何脫穎而出? LinkedIn重要嘛？</a></p>
+<p><a href="https://brianhsublog.blogspot.com/2015/08/blog-post_15.html" target="_blank" rel="noopener noreffer ">4. 主動出擊- 我要找工作了，現在美國都用什麼找工作？哪個網站平台能讓我有較多面試機會？</a></p>
+<p><a href="https://brianhsublog.blogspot.com/2015/08/blog-post_31.html" target="_blank" rel="noopener noreffer ">5. 軟體工程師面試準備- 面試要練習什麼？ 找工作和練習的時間要如何平衡拿捏？</a></p>
+<p><a href="https://brianhsublog.blogspot.com/2015/09/blog-post.html" target="_blank" rel="noopener noreffer ">6. 被錄取了- 我該注意什麼，我可以談判要求多一點薪水、股票或假期嘛？</a></p>
+<p><a href="https://brianhsublog.blogspot.com/2015/11/faq.html" target="_blank" rel="noopener noreffer ">7. 矽谷找工作之常見問題 FAQ</a></p>
+<p><a href="https://brianhsublog.blogspot.com/2018/06/blog-post.html" target="_blank" rel="noopener noreffer ">8. 面試技巧及心得，如何有條理的說服面試官？</a></p>
+<p><a href="https://brianhsublog.blogspot.com/2019/02/HowToWriteAGoodResume.html" target="_blank" rel="noopener noreffer ">9. 英文履歷怎麼寫？ 美國科技公司注重什麼？</a></p>
+<p><a href="https://brianhsublog.blogspot.com/2018/10/how-to-get-a-job-in-US.html" target="_blank" rel="noopener noreffer ">10. 如何到美國科技公司工作？</a></p>
+<p><a href="https://brianhsublog.blogspot.com/2019/03/internalReferralAndTaiwanNetwork.html" target="_blank" rel="noopener noreffer ">11. 最有效得到面試的方式- 內部推薦: 尋找內推資源 &amp; 歹晚郎互助網絡</a></p>
+<p><a href="https://brianhsublog.blogspot.com/2019/09/HowToAnswerSalaryExpectationInInterview.html" target="_blank" rel="noopener noreffer ">12. 面試中談到錢怎麼辦？ 問到你期望薪水如何接招?</a></p>
+<p><a href="https://brianhsublog.blogspot.com/2019/10/HowToNegotiateJobOffer.html" target="_blank" rel="noopener noreffer ">13. 面試得到 Offer 薪水如何談？ 三明治溝通法及最後簽約前的談判招式</a></p>
+<p>2021 年， 如果你要找工作的話， 祝你轉換順利， 拿到許多理想的 offers！ 如果你有什麼準備的技巧及心得， 也歡迎留言分享。 </p>
+<p>歡迎關注我的粉絲專頁，了解更多矽谷經驗、矽谷人物專訪、及各式矽谷新奇事務。<br>
+<a href="https://www.facebook.com/PivotSoftwareEngineer/" target="_blank" rel="noopener noreffer ">https://www.facebook.com/PivotSoftwareEngineer/</a></p>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 0001-01-01</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="http://example.org/posts/%E5%88%B7%E9%A1%8C/" data-title=""><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="http://example.org/posts/%E5%88%B7%E9%A1%8C/"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Hacker News" data-sharer="hackernews" data-url="http://example.org/posts/%E5%88%B7%E9%A1%8C/" data-title=""><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="http://example.org/posts/%E5%88%B7%E9%A1%8C/" data-title=""><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@7.3.0/icons/line.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="http://example.org/posts/%E5%88%B7%E9%A1%8C/" data-title=""><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/posts/%E5%8D%A1%E6%99%AE%E6%9B%BC%E6%88%B2%E5%8A%87%E4%B8%89%E8%A7%92/" class="prev" rel="prev" title=""><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i></a>
+            <a href="/posts/%E5%88%A9%E7%94%A8-chrome-%E5%8F%96-vimeo-%E7%9A%84%E6%88%AA%E5%9C%96%E7%9A%84%E5%91%BD%E4%BB%A4/" class="next" rel="next" title=""><i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+</article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.109.0">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
+                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2022 - 2023</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="https://www.knsh.com.tw" target="_blank">Peter</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":50},"comment":{}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>

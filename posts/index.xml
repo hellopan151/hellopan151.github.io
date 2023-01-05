@@ -1,0 +1,116 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>All Posts - My New Hugo Site</title>
+        <link>http://example.org/posts/</link>
+        <description>All Posts | My New Hugo Site</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>peterpan@knsh.com.tw (Peter)</managingEditor>
+            <webMaster>peterpan@knsh.com.tw (Peter)</webMaster><lastBuildDate>Wed, 28 Dec 2022 13:01:27 &#43;0800</lastBuildDate><atom:link href="http://example.org/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>First_post 第一貼</title>
+    <link>http://example.org/posts/first_post/</link>
+    <pubDate>Wed, 28 Dec 2022 13:01:27 &#43;0800</pubDate>
+    <author>Peter</author>
+    <guid>http://example.org/posts/first_post/</guid>
+    <description><![CDATA[我喜歡測試中文。 這是小標題，或是小內文，我想我很喜歡 這種類似小詩的東西，很棒 加油 加油!
+H1 H2 H3 H4 H5 H6 這是試著加強的字眼兒
+如果使用兩個星號時，不知道會怎麼呈現
+如果有_底線_時，又是什麼呢？
+再加上波浪符號試試看，看樣子波浪符號是刪除線
+如果是有序的標號
+這是標號 這也是標號 這是標點 這是標點 這是標點 這又是標號 這是子標 這也是子標 這也是子標 這也是子標 加上連結 這是 Google
+Logo Title Text 1Logo Title Text 2Titlevar abc = &#34;def&#34;; alert abc; $powershell = CreateObject &lt;b&gt;the is &lt;/b&gt; 試用 HTML
+code
+這是 這是 這是==hight light== I need to highlight these ==very important words==.]]></description>
+</item>
+<item>
+    <title></title>
+    <link>http://example.org/posts/asp.net-core-%E4%BE%9D%E8%B3%B4%E6%B3%A8%E5%85%A5/</link>
+    <pubDate>Mon, 01 Jan 0001 00:00:00 &#43;0000</pubDate>
+    <author>Peter</author>
+    <guid>http://example.org/posts/asp.net-core-%E4%BE%9D%E8%B3%B4%E6%B3%A8%E5%85%A5/</guid>
+    <description><![CDATA[中文版︰ https://blog.darkthread.net/blog/aspnet-core-di-notes/
+英文版︰ https://joonasw.net/view/aspnet-core-di-deep-dive
+控制反轉 (IoC) 與 依賴注入 (DI) https://notfalse.net/3/ioc-di
+https://zh.wikipedia.org/zh-tw/%E4%BE%9D%E8%B5%96%E6%B3%A8%E5%85%A5]]></description>
+</item>
+<item>
+    <title></title>
+    <link>http://example.org/posts/bash-hack/</link>
+    <pubDate>Mon, 01 Jan 0001 00:00:00 &#43;0000</pubDate>
+    <author>Peter</author>
+    <guid>http://example.org/posts/bash-hack/</guid>
+    <description><![CDATA[https://wiki.bash-hackers.org/start]]></description>
+</item>
+<item>
+    <title></title>
+    <link>http://example.org/posts/c#/</link>
+    <pubDate>Mon, 01 Jan 0001 00:00:00 &#43;0000</pubDate>
+    <author>Peter</author>
+    <guid>http://example.org/posts/c#/</guid>
+    <description><![CDATA[資料轉 int https://www.coder.work/article/958601
+控 word https://ithelp.ithome.com.tw/articles/10229663]]></description>
+</item>
+<item>
+    <title></title>
+    <link>http://example.org/posts/functional-program/</link>
+    <pubDate>Mon, 01 Jan 0001 00:00:00 &#43;0000</pubDate>
+    <author>Peter</author>
+    <guid>http://example.org/posts/functional-program/</guid>
+    <description><![CDATA[保哥的 [[Javascript]] functional programming https://blog.miniasp.com/post/2016/12/10/Functional-Programming-in-JavaScript 有簡單的JS三個 func 介紹，同時也有一些相關的連結與破關小遊戲可以使用，是很好的參考資料]]></description>
+</item>
+<item>
+    <title></title>
+    <link>http://example.org/posts/git/</link>
+    <pubDate>Mon, 01 Jan 0001 00:00:00 &#43;0000</pubDate>
+    <author>Peter</author>
+    <guid>http://example.org/posts/git/</guid>
+    <description><![CDATA[如何解決在命令提示字元下使用 Git for Windows 顯示中文亂碼的問題 ]]></description>
+</item>
+<item>
+    <title></title>
+    <link>http://example.org/posts/google-sheets-as-database/</link>
+    <pubDate>Mon, 01 Jan 0001 00:00:00 &#43;0000</pubDate>
+    <author>Peter</author>
+    <guid>http://example.org/posts/google-sheets-as-database/</guid>
+    <description><![CDATA[https://www.google.com/search?q=google+sheets+as+database+api&client=firefox-b-d&sxsrf=AOaemvIzwk8n3FTry2qs6w3a7wn6HOU09Q:1631065306594&ei=2hQ4YbraI4a0mAX3vaSYCQ&start=20&sa=N&ved=2ahUKEwi6r9Hhn-7yAhUGGqYKHfceCZM4ChDw0wN6BAgBEE8&biw=1920&bih=995
+google visualization api data source url https://www.google.com/search?q=google+visualization+api+data+source+url&client=firefox-b-d&biw=1920&bih=995&sxsrf=AOaemvInwLGD5VVoGbdLpQS6cxckkzH2QQ%3A1631062119627&ei=Zwg4YcrhJYa1mAXbzZ2QCA&oq=google+visualization+api+data+source+url&gs_lcp=Cgdnd3Mtd2l6EAMyBAgjECc6BwgjELADECdKBAhBGAFQnmFYnmFgwGRoAXAAeACAATWIATWSAQExmAEAoAEByAEBwAEB&sclient=gws-wiz&ved=0ahUKEwiKsfzxk-7yAhWGGqYKHdtmB4I4FBDh1QMIDQ&uact=5
+https://developers.google.com/chart/interactive/docs/reference
+https://developers.google.com/chart/interactive/docs/spreadsheets
+https://greenido.wordpress.com/2013/12/16/big-query-and-google-spreadsheet-intergration/
+google sheets api sql https://www.google.com/search?client=firefox-b-d&q=google+sheets+api+sql
+https://www.wfublog.com/2017/03/google-apps-script-spreadsheet-delay-write-data.html
+https://www.wfublog.com/2017/02/google-apps-script-spreadsheet-query-read-data.html
+https://www.wfublog.com/2017/01/google-apps-script-spreadsheet-write-data.html
+https://www.wfublog.com/2014/10/google-spreadsheet-as-micro-database-3-query-sort-skill.html
+https://www.wfublog.com/2013/03/google-spreadsheet-as-micro-database-update-2.html
+https://www.wfublog.com/2013/02/google-spreadsheet-as-micro-database-update-1.html
+https://www.wfublog.com/2013/02/google-spreadsheet-as-micro-database-update-1.html
+https://www.wfublog.com/2016/11/google-4-sql.html
+https://developers.google.com/sheets/?hl=zh_TW https://developers.google.com/sheets/api/samples?hl=zh_TW]]></description>
+</item>
+<item>
+    <title></title>
+    <link>http://example.org/posts/javascript/</link>
+    <pubDate>Mon, 01 Jan 0001 00:00:00 &#43;0000</pubDate>
+    <author>Peter</author>
+    <guid>http://example.org/posts/javascript/</guid>
+    <description><![CDATA[我要成為前端工程師！給 JavaScript 新手的建議與學習資源整理 functional program
+前端工程研究：關於 JavaScript 的物件藍圖建立方法 ]]></description>
+</item>
+<item>
+    <title></title>
+    <link>http://example.org/posts/kpi/</link>
+    <pubDate>Mon, 01 Jan 0001 00:00:00 &#43;0000</pubDate>
+    <author>Peter</author>
+    <guid>http://example.org/posts/kpi/</guid>
+    <description><![CDATA[技術組的方向 開發程式，目的是建構網站，利用網站作為工具，達到我們協助客戶的目的。 更有效益 時間短，效果一樣 分工出去，提供工具讓企劃組或是外部單位自助 減少上傳程式、檔案、資料的工作，因為那不是有效益的工作 建立同仁的能力 溝通能力 雅嵐的平行溝通與向上溝通 心理強度 雅嵐的情緒管理 阿智常有示弱與放棄溝通的狀況 程式能力 .net 語言 ( 阿智 ) 安排小案子或工具，讓阿智完成，並提供給夥伴使用( [[表格讀入]] ) 接下志崙的 api ，讓阿智去好好維護，並得到 .net MVC 的知識 OO 的概念 ( 雅嵐 ) 讓雅嵐改進 import word 程式。讓它可以單獨被測試，成為一個排隊機制。 團隊合作的能力 雅嵐在程式端易走單打獨鬥 阿智不敢?與其他人合作 思考的高度 規劃的能力 短期目標 建立雅嵐OO能力 建立阿智.net能力 建立雅嵐與阿智互相代理的能力 客戶 1. 內部客戶 企劃組 ( 後台 ) 2. 外部客戶 老師 ( 主要客戶, 用戶 ) ( 也是行銷的標的 ) 學生 ( 用戶 ) 家長 ( 出錢的客戶 )]]></description>
+</item>
+<item>
+    <title></title>
+    <link>http://example.org/posts/linux/</link>
+    <pubDate>Mon, 01 Jan 0001 00:00:00 &#43;0000</pubDate>
+    <author>Peter</author>
+    <guid>http://example.org/posts/linux/</guid>
+    <description><![CDATA[https://ithelp.ithome.com.tw/users/20107229/ironman/1409]]></description>
+</item>
+</channel>
+</rss>

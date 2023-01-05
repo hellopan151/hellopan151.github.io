@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title> - My New Hugo Site</title><meta name="Description" content="This is my cool site"><meta property="og:title" content="" />
+<meta property="og:description" content="https://www.ptt.cc/bbs/Soft_Job/M.1630417545.A.965.html
+看到不錯的文章 翻譯分享一下
+原文: https://chriskiehl.com/article/thoughts-after-6-years
+翻譯:
+軟體開發六年後我改變想法的事情:
+如果你的隊友經驗參差不齊，Typed languages 是比較好的選擇
+Standups 會議以注意新人來說是有用的
+Sprint retrospectives 如果拿來做真正的流程修正(course correction)是有用的； 而不是一些敏捷/scum master 拿來浪費大家時間的
+軟體架構比啥都重要。有好的抽象再爛的實作都不太會弄髒 code base；爛抽象或 missing layer 可以讓 code base 變成一坨屎。
+java 沒那麼爛
+Clever code 通常不是什麼好 code；清晰好讀(Clarity)的 code 最重要
+爛 code 可以被以任何方式寫出來 (in any paradigm)
+所謂的 best practices 是要看上下文，並非通用解。盲目追求會讓你看起來像白癡
+在你不需要時硬去設計一個 scalable system，你就是爛工程師
+Static analysis 有用
+DRY(dont repeat yourself) 是為了避免特定問題，並不是最終追求目標。
+一般來說 RDBMS &gt; NoSql
+Functional programming 是另一個工具，不是萬用解/靈丹
+一路走來堅持的觀念
+YAGNI, SOLID, DRY 請按造這個順序
+YAGNI:You aren&rsquo;t gonna need it SOLID: 某個 OO 原則（單一功能、開閉原則、里氏替換、介面隔離、依賴反轉） DRY: dont repeat yourself 紙筆是最好的開發工具但很少人用" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://example.org/posts/%E8%BB%9F%E9%AB%94%E9%96%8B%E7%99%BC%E5%85%AD%E5%B9%B4%E5%BE%8C%E6%88%91%E6%94%B9%E8%AE%8A%E6%83%B3%E6%B3%95%E7%9A%84%E4%BA%8B%E6%83%85/" /><meta property="article:section" content="posts" />
+
+<meta property="og:site_name" content="My cool site" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content=""/>
+<meta name="twitter:description" content="https://www.ptt.cc/bbs/Soft_Job/M.1630417545.A.965.html
+看到不錯的文章 翻譯分享一下
+原文: https://chriskiehl.com/article/thoughts-after-6-years
+翻譯:
+軟體開發六年後我改變想法的事情:
+如果你的隊友經驗參差不齊，Typed languages 是比較好的選擇
+Standups 會議以注意新人來說是有用的
+Sprint retrospectives 如果拿來做真正的流程修正(course correction)是有用的； 而不是一些敏捷/scum master 拿來浪費大家時間的
+軟體架構比啥都重要。有好的抽象再爛的實作都不太會弄髒 code base；爛抽象或 missing layer 可以讓 code base 變成一坨屎。
+java 沒那麼爛
+Clever code 通常不是什麼好 code；清晰好讀(Clarity)的 code 最重要
+爛 code 可以被以任何方式寫出來 (in any paradigm)
+所謂的 best practices 是要看上下文，並非通用解。盲目追求會讓你看起來像白癡
+在你不需要時硬去設計一個 scalable system，你就是爛工程師
+Static analysis 有用
+DRY(dont repeat yourself) 是為了避免特定問題，並不是最終追求目標。
+一般來說 RDBMS &gt; NoSql
+Functional programming 是另一個工具，不是萬用解/靈丹
+一路走來堅持的觀念
+YAGNI, SOLID, DRY 請按造這個順序
+YAGNI:You aren&rsquo;t gonna need it SOLID: 某個 OO 原則（單一功能、開閉原則、里氏替換、介面隔離、依賴反轉） DRY: dont repeat yourself 紙筆是最好的開發工具但很少人用"/>
+<meta name="application-name" content="My cool site">
+<meta name="apple-mobile-web-app-title" content="My cool site"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://example.org/posts/%E8%BB%9F%E9%AB%94%E9%96%8B%E7%99%BC%E5%85%AD%E5%B9%B4%E5%BE%8C%E6%88%91%E6%94%B9%E8%AE%8A%E6%83%B3%E6%B3%95%E7%9A%84%E4%BA%8B%E6%83%85/" /><link rel="prev" href="http://example.org/posts/%E9%84%92%E9%96%8B%E8%93%AE%E7%B7%B4%E5%87%BA%EF%BC%96%E7%A8%AE%E7%AE%A1%E7%90%86%E8%82%8C%E8%82%89/" /><link rel="next" href="http://example.org/posts/%E8%A1%A3%E6%AB%A5%E9%86%AB%E7%94%9F%E8%B3%B4%E5%BA%AD%E8%8D%B7%E7%9A%84%E6%96%B7%E6%8D%A8%E9%9B%A2/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "",
+        "inLanguage": "en",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "http:\/\/example.org\/posts\/%E8%BB%9F%E9%AB%94%E9%96%8B%E7%99%BC%E5%85%AD%E5%B9%B4%E5%BE%8C%E6%88%91%E6%94%B9%E8%AE%8A%E6%83%B3%E6%B3%95%E7%9A%84%E4%BA%8B%E6%83%85\/"
+        },"genre": "posts","wordcount":  576 ,
+        "url": "http:\/\/example.org\/posts\/%E8%BB%9F%E9%AB%94%E9%96%8B%E7%99%BC%E5%85%AD%E5%B9%B4%E5%BE%8C%E6%88%91%E6%94%B9%E8%AE%8A%E6%83%B3%E6%B3%95%E7%9A%84%E4%BA%8B%E6%83%85\/","publisher": {
+            "@type": "Organization",
+            "name": ""},"author": {
+                "@type": "Person",
+                "name": "Peter"
+            },"description": ""
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="My New Hugo Site">My cool site</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> Posts </a><a class="menu-item" href="/tags/"> Tags </a><a class="menu-item" href="/categories/"> Categories </a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="My New Hugo Site">My cool site</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><a class="menu-item" href="/posts/" title="">Posts</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/categories/" title="">Categories</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a></div>
+    </div>
+</header><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX"></h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="https://www.knsh.com.tw" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Peter</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="0001-01-01">0001-01-01</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;576 words&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;3 minutes&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  data-kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#things-ive-changed-my-mind-on">Things I&rsquo;ve changed my mind on:</a></li>
+    <li><a href="#opinions-ive-picked-up-along-the-way">Opinions I&rsquo;ve picked up along the way</a></li>
+    <li><a href="#old-opinions-unchanged">Old opinions unchanged:</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><p><a href="https://www.ptt.cc/bbs/Soft_Job/M.1630417545.A.965.html" target="_blank" rel="noopener noreffer ">https://www.ptt.cc/bbs/Soft_Job/M.1630417545.A.965.html</a></p>
+<p>看到不錯的文章 翻譯分享一下</p>
+<p>原文:
+<a href="https://chriskiehl.com/article/thoughts-after-6-years" target="_blank" rel="noopener noreffer ">https://chriskiehl.com/article/thoughts-after-6-years</a></p>
+<p>翻譯:</p>
+<p>軟體開發六年後我改變想法的事情:</p>
+<ul>
+<li>
+<p>如果你的隊友經驗參差不齊，Typed languages 是比較好的選擇</p>
+</li>
+<li>
+<p>Standups 會議以注意新人來說是有用的</p>
+</li>
+<li>
+<p>Sprint retrospectives 如果拿來做真正的流程修正(course correction)是有用的；
+而不是一些敏捷/scum master 拿來浪費大家時間的</p>
+</li>
+<li>
+<p>軟體架構比啥都重要。有好的抽象再爛的實作都不太會弄髒 code base；爛抽象或
+missing layer 可以讓 code base 變成一坨屎。</p>
+</li>
+<li>
+<p>java 沒那麼爛</p>
+</li>
+<li>
+<p>Clever code 通常不是什麼好 code；清晰好讀(Clarity)的 code 最重要</p>
+</li>
+<li>
+<p>爛 code 可以被以任何方式寫出來 (in any paradigm)</p>
+</li>
+<li>
+<p>所謂的 best practices 是要看上下文，並非通用解。盲目追求會讓你看起來像白癡</p>
+</li>
+<li>
+<p>在你不需要時硬去設計一個 scalable system，你就是爛工程師</p>
+</li>
+<li>
+<p>Static analysis 有用</p>
+</li>
+<li>
+<p>DRY(dont repeat yourself) 是為了避免特定問題，並不是最終追求目標。</p>
+</li>
+<li>
+<p>一般來說 RDBMS &gt; NoSql</p>
+</li>
+<li>
+<p>Functional programming 是另一個工具，不是萬用解/靈丹</p>
+</li>
+</ul>
+<p>一路走來堅持的觀念</p>
+<ul>
+<li>
+<p>YAGNI, SOLID, DRY 請按造這個順序</p>
+<ul>
+<li>YAGNI:You aren&rsquo;t gonna need it</li>
+<li>SOLID: 某個 OO 原則（單一功能、開閉原則、里氏替換、介面隔離、依賴反轉）</li>
+<li>DRY: dont repeat yourself</li>
+</ul>
+</li>
+<li>
+<p>紙筆是最好的開發工具但很少人用</p>
+</li>
+<li>
+<p>用乾淨/可讀(purity)為代價換取實用性是個好方法</p>
+</li>
+<li>
+<p>狂導入額外的技術不是好方向</p>
+</li>
+<li>
+<p>直接跟客戶/需求端理解需求會比較快又精確</p>
+</li>
+<li>
+<p>&ldquo;scalable&quot;這個詞在碼農中有股神秘的力量，僅僅這個字可以讓他們陷入瘋狂，然後僅
+僅為了這個字可以做出瘋狂的設計</p>
+<p>有點難翻XD 原文:</p>
+<p>The word &ldquo;scalable&rdquo; has a mystical and stupefying power
+over the mind of the software engineer.</p>
+<p>Its mere utterance can whip them into a depraved frenzy.
+Grim actions have been justified using this word.</p>
+</li>
+<li>
+<p>雖然叫工程師，但其實很多決策都是跟風(cargo-cult)，並不是有嚴謹的分析、資料數
+據佐證</p>
+</li>
+<li>
+<p>大概九成的 PM 明天消失對你都沒影響，甚至效率還會變好</p>
+</li>
+<li>
+<p>當我做了一百場面試後: 面試方法徹底崩壞，我也不知道怎麼做更好</p>
+</li>
+</ul>
+<p>沒變的觀念</p>
+<ul>
+<li>
+<p>會刁 code style, linting rules 或枝微末節的都怪咖</p>
+</li>
+<li>
+<p>Code coverage 跟 code 品質完全沒差</p>
+</li>
+<li>
+<p>Monoliths (大概指微服務的反面)系統在大部分情境都是很好的</p>
+</li>
+<li>
+<p>TDD 主義者(purists)是最糟糕的存在，他們的腦不能理解現實中存在不同的 workflows</p>
+</li>
+</ul>
+<p><a href="https://chriskiehl.com/article/thoughts-after-6-years" target="_blank" rel="noopener noreffer ">https://chriskiehl.com/article/thoughts-after-6-years</a></p>
+<h1 id="software-development-topics-ive-changed-my-mind-on-after-6-years-in-the-industry">Software development topics I&rsquo;ve changed my mind on after 6 years in the industry</h1>
+<p>Published: 2021-01-23</p>
+<h2 id="things-ive-changed-my-mind-on">Things I&rsquo;ve changed my mind on:</h2>
+<p>Things I now believe, which past me would&rsquo;ve squabbled with:</p>
+<ul>
+<li>Typed languages are better when you&rsquo;re working on a team of people with various experience levels</li>
+<li>Standups are actually useful for keeping an eye on the newbies.</li>
+<li>Sprint retrospectives have their place so long as they&rsquo;re for actual course correction (i.e. &ldquo;holy shit, <em>that</em> went poorly!&rdquo;) and not some god awful  &lsquo;agile&rsquo; / &lsquo;scum master&rsquo; driven waste of everyone&rsquo;s time</li>
+<li>Software architecture probably matters more than anything else. A shitty implementation of a good abstraction causes no net harm to the code base. A bad abstraction or missing layer causes everything to rot.  </li>
+<li>Java isn&rsquo;t that terrible of a language.</li>
+<li>Clever code isn&rsquo;t usually good code. Clarity trumps all other concerns.</li>
+<li>Bad code can be written in any paradigm</li>
+<li>So called &ldquo;best practices&rdquo; are contextual and not broadly applicable. Blindly following them makes you an idiot</li>
+<li>Designing scalable systems when you don&rsquo;t need to makes you a <em>bad engineer</em>.</li>
+<li>Static analysis is useful</li>
+<li>DRY is about avoiding a specific problem, not an end goal unto itself.</li>
+<li>In general, RDBMS &gt; NoSql</li>
+<li>Functional programming is another tool, not a panacea.</li>
+</ul>
+<h2 id="opinions-ive-picked-up-along-the-way">Opinions I&rsquo;ve picked up along the way</h2>
+<ul>
+<li>YAGNI, SOLID, DRY. In that order.</li>
+<li>Pencil and paper are the best programming tools and vastly under used</li>
+<li>Trading purity in exchange for practicality is usually a good call</li>
+<li>Adding more technology is rarely a good call</li>
+<li>Talking directly to the customer always reveals more about the problem, in less time, and with higher accuracy</li>
+<li>The word &ldquo;scalable&rdquo; has a mystical and stupefying power over the mind of the software engineer. Its mere utterance can whip them into a depraved frenzy. Grim actions have been justified using this word</li>
+<li>Despite being called &ldquo;engineers,&rdquo; most decision are pure cargo-cult with no backing analysis, data, or numbers</li>
+<li>90% – <em>maybe</em> 93% – of project managers, could probably disappear tomorrow to either no effect or a net gain in efficiency.</li>
+<li>After performing over 100 interviews: interviewing is thoroughly broken. I also have no idea how to actually make it better.</li>
+</ul>
+<h2 id="old-opinions-unchanged">Old opinions unchanged:</h2>
+<ul>
+<li>People who stress over code style, linting rules, or other minutia are insane weirdos</li>
+<li>Code coverage has absolutely nothing to do with code quality</li>
+<li>Monoliths are pretty good in most circumstances</li>
+<li>TDD purists are just <em>the worst</em>. Their frail little minds can&rsquo;t process the existence of different workflows.</li>
+</ul>
+<p>  We&rsquo;ll see which of these have flipped or changed at year 10.</p>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 0001-01-01</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="http://example.org/posts/%E8%BB%9F%E9%AB%94%E9%96%8B%E7%99%BC%E5%85%AD%E5%B9%B4%E5%BE%8C%E6%88%91%E6%94%B9%E8%AE%8A%E6%83%B3%E6%B3%95%E7%9A%84%E4%BA%8B%E6%83%85/" data-title=""><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="http://example.org/posts/%E8%BB%9F%E9%AB%94%E9%96%8B%E7%99%BC%E5%85%AD%E5%B9%B4%E5%BE%8C%E6%88%91%E6%94%B9%E8%AE%8A%E6%83%B3%E6%B3%95%E7%9A%84%E4%BA%8B%E6%83%85/"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Hacker News" data-sharer="hackernews" data-url="http://example.org/posts/%E8%BB%9F%E9%AB%94%E9%96%8B%E7%99%BC%E5%85%AD%E5%B9%B4%E5%BE%8C%E6%88%91%E6%94%B9%E8%AE%8A%E6%83%B3%E6%B3%95%E7%9A%84%E4%BA%8B%E6%83%85/" data-title=""><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="http://example.org/posts/%E8%BB%9F%E9%AB%94%E9%96%8B%E7%99%BC%E5%85%AD%E5%B9%B4%E5%BE%8C%E6%88%91%E6%94%B9%E8%AE%8A%E6%83%B3%E6%B3%95%E7%9A%84%E4%BA%8B%E6%83%85/" data-title=""><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@7.3.0/icons/line.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="http://example.org/posts/%E8%BB%9F%E9%AB%94%E9%96%8B%E7%99%BC%E5%85%AD%E5%B9%B4%E5%BE%8C%E6%88%91%E6%94%B9%E8%AE%8A%E6%83%B3%E6%B3%95%E7%9A%84%E4%BA%8B%E6%83%85/" data-title=""><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/posts/%E9%84%92%E9%96%8B%E8%93%AE%E7%B7%B4%E5%87%BA%EF%BC%96%E7%A8%AE%E7%AE%A1%E7%90%86%E8%82%8C%E8%82%89/" class="prev" rel="prev" title=""><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i></a>
+            <a href="/posts/%E8%A1%A3%E6%AB%A5%E9%86%AB%E7%94%9F%E8%B3%B4%E5%BA%AD%E8%8D%B7%E7%9A%84%E6%96%B7%E6%8D%A8%E9%9B%A2/" class="next" rel="next" title=""><i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+</article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.109.0">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
+                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2022 - 2023</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="https://www.knsh.com.tw" target="_blank">Peter</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":50},"comment":{}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>

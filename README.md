@@ -1,2 +1,2 @@
 # hellopan151.github.io
-Hugo web page
+Hugo web page ( 151 )

@@ -4,33 +4,35 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="robots" content="noodp" />
-        <title>工作技巧與紀錄 - My New Hugo Site</title><meta name="Description" content="This is my cool site"><meta property="og:title" content="工作技巧與紀錄" />
-<meta property="og:description" content="chrome headless 利用 chrome 取 vimeo 的截圖的命令
-使用 excel 產出指令 取回截圖的 chrome headless 指令" />
+        <title>Openssh_csr - My New Hugo Site</title><meta name="Description" content="This is my cool site"><meta property="og:title" content="Openssh_csr" />
+<meta property="og:description" content="SSL CSR 產生方式 在 linux / bash 之中使用以下指令
+openssl req -new -newkey rsa:2048 -nodes -keyout star.domain.com.tw.key -out star.domain.com.tw.csr -subj &#34;/C=TW/ST=TAIWAN/L=TAIPEI/O=公司英文名/OU=部門英文名/CN=*.domain.com.tw&#34; openssl req -new -newkey rsa:2048 -nodes -keyout www.domain.com.tw.key -out www.domain.com.tw.csr -subj &#34;/C=TW/ST=TAIWAN/L=TAIPEI/O=公司英文名/OU=部門英文名/CN=www.domain.com.tw&#34; 直接產出 key 以及 CSR，打包加密碼後，寄給廠商，請廠商代為向原廠申請 SSL ，請廠商提供以下三種格式︰
+nginx iis domino " />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://example.org/posts/%E5%B7%A5%E4%BD%9C%E6%8A%80%E5%B7%A7%E8%88%87%E7%B4%80%E9%8C%84/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2021-08-25T16:03:20+08:00" />
-<meta property="article:modified_time" content="2021-08-25T16:03:20+08:00" /><meta property="og:site_name" content="My cool site" />
+<meta property="og:url" content="http://example.org/posts/openssh_csr/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-01-07T08:32:28+08:00" />
+<meta property="article:modified_time" content="2023-01-07T08:32:28+08:00" /><meta property="og:site_name" content="My cool site" />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="工作技巧與紀錄"/>
-<meta name="twitter:description" content="chrome headless 利用 chrome 取 vimeo 的截圖的命令
-使用 excel 產出指令 取回截圖的 chrome headless 指令"/>
+<meta name="twitter:title" content="Openssh_csr"/>
+<meta name="twitter:description" content="SSL CSR 產生方式 在 linux / bash 之中使用以下指令
+openssl req -new -newkey rsa:2048 -nodes -keyout star.domain.com.tw.key -out star.domain.com.tw.csr -subj &#34;/C=TW/ST=TAIWAN/L=TAIPEI/O=公司英文名/OU=部門英文名/CN=*.domain.com.tw&#34; openssl req -new -newkey rsa:2048 -nodes -keyout www.domain.com.tw.key -out www.domain.com.tw.csr -subj &#34;/C=TW/ST=TAIWAN/L=TAIPEI/O=公司英文名/OU=部門英文名/CN=www.domain.com.tw&#34; 直接產出 key 以及 CSR，打包加密碼後，寄給廠商，請廠商代為向原廠申請 SSL ，請廠商提供以下三種格式︰
+nginx iis domino "/>
 <meta name="application-name" content="My cool site">
 <meta name="apple-mobile-web-app-title" content="My cool site"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://example.org/posts/%E5%B7%A5%E4%BD%9C%E6%8A%80%E5%B7%A7%E8%88%87%E7%B4%80%E9%8C%84/" /><link rel="prev" href="http://example.org/posts/%E5%B7%A5%E4%BD%9C%E7%B3%BB%E7%B5%B1/" /><link rel="next" href="http://example.org/posts/%E8%87%AA%E6%9E%B6%E7%B7%9A%E4%B8%8Aexcel/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://example.org/posts/openssh_csr/" /><link rel="prev" href="http://example.org/posts/ansible/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
         <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
         <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><script type="application/ld+json">
     {
         "@context": "http://schema.org",
         "@type": "BlogPosting",
-        "headline": "工作技巧與紀錄",
+        "headline": "Openssh_csr",
         "inLanguage": "en",
         "mainEntityOfPage": {
             "@type": "WebPage",
-            "@id": "http:\/\/example.org\/posts\/%E5%B7%A5%E4%BD%9C%E6%8A%80%E5%B7%A7%E8%88%87%E7%B4%80%E9%8C%84\/"
-        },"genre": "posts","wordcount":  14 ,
-        "url": "http:\/\/example.org\/posts\/%E5%B7%A5%E4%BD%9C%E6%8A%80%E5%B7%A7%E8%88%87%E7%B4%80%E9%8C%84\/","datePublished": "2021-08-25T16:03:20+08:00","dateModified": "2021-08-25T16:03:20+08:00","publisher": {
+            "@id": "http:\/\/example.org\/posts\/openssh_csr\/"
+        },"genre": "posts","wordcount":  41 ,
+        "url": "http:\/\/example.org\/posts\/openssh_csr\/","datePublished": "2023-01-07T08:32:28+08:00","dateModified": "2023-01-07T08:32:28+08:00","publisher": {
             "@type": "Organization",
             "name": ""},"author": {
                 "@type": "Person",
@@ -69,9 +71,9 @@
                 <div class="container"><div class="toc" id="toc-auto">
             <h2 class="toc-title">Contents</h2>
             <div class="toc-content" id="toc-content-auto"></div>
-        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">工作技巧與紀錄</h1><div class="post-meta">
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Openssh_csr</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="https://www.knsh.com.tw" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Peter</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2021-08-25">2021-08-25</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;14 words&nbsp;
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2023-01-07">2023-01-07</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;41 words&nbsp;
                 <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;One minute&nbsp;</div>
         </div><div class="details toc" id="toc-static"  data-kept="">
                 <div class="details-summary toc-title">
@@ -79,18 +81,26 @@
                     <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
                 </div>
                 <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents"></nav></div>
-            </div><div class="content" id="content"><p>chrome headless <a href="http://example.org/posts/%E5%88%A9%E7%94%A8-chrome-%E5%8F%96-vimeo-%E7%9A%84%E6%88%AA%E5%9C%96%E7%9A%84%E5%91%BD%E4%BB%A4/" rel="">利用 chrome 取 vimeo 的截圖的命令</a></p>
-<p>使用 excel 產出指令 <a href="/posts/%E5%8F%96%E5%9B%9E%E6%88%AA%E5%9C%96%E7%9A%84-chrome-headless-%E6%8C%87%E4%BB%A4/" rel="">取回截圖的 chrome headless 指令</a></p>
+            </div><div class="content" id="content"><h1 id="ssl-csr-產生方式">SSL CSR 產生方式</h1>
+<p>在 linux / bash 之中使用以下指令</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">openssl req -new -newkey rsa:2048 -nodes -keyout star.domain.com.tw.key -out star.domain.com.tw.csr -subj <span class="s2">&#34;/C=TW/ST=TAIWAN/L=TAIPEI/O=公司英文名/OU=部門英文名/CN=*.domain.com.tw&#34;</span>
+</span></span><span class="line"><span class="cl">openssl req -new -newkey rsa:2048 -nodes -keyout www.domain.com.tw.key -out www.domain.com.tw.csr -subj <span class="s2">&#34;/C=TW/ST=TAIWAN/L=TAIPEI/O=公司英文名/OU=部門英文名/CN=www.domain.com.tw&#34;</span>
+</span></span></code></pre></div><p>直接產出 key 以及 CSR，打包加密碼後，寄給廠商，請廠商代為向原廠申請 SSL ，請廠商提供以下三種格式︰</p>
+<ul>
+<li>nginx</li>
+<li>iis</li>
+<li>domino</li>
+</ul>
 </div><div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">
             <div class="post-info-mod">
-                <span>Updated on 2021-08-25</span>
+                <span>Updated on 2023-01-07</span>
             </div></div>
         <div class="post-info-line">
             <div class="post-info-md"></div>
             <div class="post-info-share">
-                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="http://example.org/posts/%E5%B7%A5%E4%BD%9C%E6%8A%80%E5%B7%A7%E8%88%87%E7%B4%80%E9%8C%84/" data-title="工作技巧與紀錄"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="http://example.org/posts/%E5%B7%A5%E4%BD%9C%E6%8A%80%E5%B7%A7%E8%88%87%E7%B4%80%E9%8C%84/"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Hacker News" data-sharer="hackernews" data-url="http://example.org/posts/%E5%B7%A5%E4%BD%9C%E6%8A%80%E5%B7%A7%E8%88%87%E7%B4%80%E9%8C%84/" data-title="工作技巧與紀錄"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="http://example.org/posts/%E5%B7%A5%E4%BD%9C%E6%8A%80%E5%B7%A7%E8%88%87%E7%B4%80%E9%8C%84/" data-title="工作技巧與紀錄"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@7.3.0/icons/line.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="http://example.org/posts/%E5%B7%A5%E4%BD%9C%E6%8A%80%E5%B7%A7%E8%88%87%E7%B4%80%E9%8C%84/" data-title="工作技巧與紀錄"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
+                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="http://example.org/posts/openssh_csr/" data-title="Openssh_csr"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="http://example.org/posts/openssh_csr/"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Hacker News" data-sharer="hackernews" data-url="http://example.org/posts/openssh_csr/" data-title="Openssh_csr"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="http://example.org/posts/openssh_csr/" data-title="Openssh_csr"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@7.3.0/icons/line.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="http://example.org/posts/openssh_csr/" data-title="Openssh_csr"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
             </div>
         </div>
     </div>
@@ -102,8 +112,7 @@
         </section>
     </div>
 
-    <div class="post-nav"><a href="/posts/%E5%B7%A5%E4%BD%9C%E7%B3%BB%E7%B5%B1/" class="prev" rel="prev" title="工作系統"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>工作系統</a>
-            <a href="/posts/%E8%87%AA%E6%9E%B6%E7%B7%9A%E4%B8%8Aexcel/" class="next" rel="next" title="研究自架線上excel">研究自架線上excel<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+    <div class="post-nav"><a href="/posts/ansible/" class="prev" rel="prev" title="Ansible"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>Ansible</a></div>
 </div>
 </article></div>
             </main><footer class="footer">

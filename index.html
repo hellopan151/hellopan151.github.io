@@ -58,42 +58,66 @@
 </header><main class="main">
                 <div class="container"><div class="page home" data-home="posts"><div class="home-profile"><div class="home-subtitle"><div id="id-1" class="typeit"></div></div><div class="links"></div></div>
 <article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/posts/first_post/">First_post 第一貼</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="https://www.knsh.com.tw" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Peter</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-12-28">2022-12-28</time></span></div><div class="content">我喜歡測試中文。 這是小標題，或是小內文，我想我很喜歡 這種類似小詩的東西，很棒 加油 加油!
-H1 H2 H3 H4 H5 H6 這是試著加強的字眼兒
-如果使用兩個星號時，不知道會怎麼呈現
-如果有_底線_時，又是什麼呢？
-再加上波浪符號試試看，看樣子波浪符號是刪除線
-如果是有序的標號
-這是標號 這也是標號 這是標點 這是標點 這是標點 這又是標號 這是子標 這也是子標 這也是子標 這也是子標 加上連結 這是 Google
-Logo Title Text 1Logo Title Text 2Titlevar abc = &#34;def&#34;; alert abc; $powershell = CreateObject &lt;b&gt;the is &lt;/b&gt; 試用 HTML
-code
-這是 這是 這是==hight light== I need to highlight these ==very important words==.</div><div class="post-footer">
-        <a href="/posts/first_post/">Read More</a></div>
+        <a href="/posts/openssh_csr/">Openssh_csr</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="https://www.knsh.com.tw" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Peter</a></span>&nbsp;<span class="post-publish">published on <time datetime="2023-01-07">2023-01-07</time></span></div><div class="content">SSL CSR 產生方式 在 linux / bash 之中使用以下指令
+openssl req -new -newkey rsa:2048 -nodes -keyout star.domain.com.tw.key -out star.domain.com.tw.csr -subj &#34;/C=TW/ST=TAIWAN/L=TAIPEI/O=公司英文名/OU=部門英文名/CN=*.domain.com.tw&#34; openssl req -new -newkey rsa:2048 -nodes -keyout www.domain.com.tw.key -out www.domain.com.tw.csr -subj &#34;/C=TW/ST=TAIWAN/L=TAIPEI/O=公司英文名/OU=部門英文名/CN=www.domain.com.tw&#34; 直接產出 key 以及 CSR，打包加密碼後，寄給廠商，請廠商代為向原廠申請 SSL ，請廠商提供以下三種格式︰
+nginx iis domino </div><div class="post-footer">
+        <a href="/posts/openssh_csr/">Read More</a></div>
 </article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/posts/asp.net-core-%E4%BE%9D%E8%B3%B4%E6%B3%A8%E5%85%A5/"></a>
-    </h1><div class="post-meta"><span class="post-author"><a href="https://www.knsh.com.tw" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Peter</a></span>&nbsp;<span class="post-publish">published on <time datetime="0001-01-01">0001-01-01</time></span></div><div class="content">中文版︰ https://blog.darkthread.net/blog/aspnet-core-di-notes/
-英文版︰ https://joonasw.net/view/aspnet-core-di-deep-dive
-控制反轉 (IoC) 與 依賴注入 (DI) https://notfalse.net/3/ioc-di
-https://zh.wikipedia.org/zh-tw/%E4%BE%9D%E8%B5%96%E6%B3%A8%E5%85%A5</div><div class="post-footer">
-        <a href="/posts/asp.net-core-%E4%BE%9D%E8%B3%B4%E6%B3%A8%E5%85%A5/">Read More</a></div>
+        <a href="/posts/ansible/">Ansible</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="https://www.knsh.com.tw" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Peter</a></span>&nbsp;<span class="post-publish">published on <time datetime="2023-01-05">2023-01-05</time></span></div><div class="content">如何在 windows 上面安裝 ansible 的客戶端 # Setup WinRM # https://www.ansiblepilot.com/articles/configure-a-windows-host-for-ansible-ansible-winrm/ $url = &#34;https://raw.githubusercontent.com/ansible/ansible/devel/examples/scripts/ConfigureRemotingForAnsible.ps1&#34; $file = &#34;$env:temp\ConfigureRemotingForAnsible.ps1&#34; (New-Object -TypeName System.Net.WebClient).DownloadFile($url, $file) powershell.exe -ExecutionPolicy ByPass -File $file 如何在 linux 上面連到 windows inventory.yaml
+[defaults] inventory = inventory remote_user = peter host_key_checking = False inventory
+[windows] bee ansible_host=192.168.21.118 ansible_user=Administrator ansible_password=&#34;password&#34; dolphin ansible_host=192.168.21.130 ansible_user=Administrator ansible_password=&#34;password&#34; ant ansible_host=192.168.21.116 ansible_user=Administrator ansible_password=&#34;password&#34; seal ansible_host=192.168.21.131 ansible_user=Administrator ansible_password=&#34;password&#34; spider ansible_host=192.168.21.115 ansible_user=Administrator ansible_password=&#34;password&#34; whale ansible_host=192.168.21.132 ansible_user=Administrator ansible_password=&#34;password&#34; client_test ansible_host=192.168.21.206 ansible_user=Administrator ansible_password=&#34;password&#34; [windows:vars] ansible_port=5986 #ansible_port=5985 ansible_connection=winrm ansible_winrm_transport=basic ansible_winrm_server_cert_validation=ignore win_hosts.</div><div class="post-footer">
+        <a href="/posts/ansible/">Read More</a></div>
 </article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/posts/bash-hack/"></a>
-    </h1><div class="post-meta"><span class="post-author"><a href="https://www.knsh.com.tw" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Peter</a></span>&nbsp;<span class="post-publish">published on <time datetime="0001-01-01">0001-01-01</time></span></div><div class="content">https://wiki.bash-hackers.org/start</div><div class="post-footer">
-        <a href="/posts/bash-hack/">Read More</a></div>
+        <a href="/posts/%E8%A8%AD%E8%A8%88%E6%A8%A1%E5%BC%8F%E7%9A%84%E5%8F%83%E8%80%83%E8%B3%87%E6%96%99/">設計模式的參考資料</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="https://www.knsh.com.tw" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Peter</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-09-11">2022-09-11</time></span></div><div class="content"><h1 id="控制反轉">控制反轉</h1></div><div class="post-footer">
+        <a href="/posts/%E8%A8%AD%E8%A8%88%E6%A8%A1%E5%BC%8F%E7%9A%84%E5%8F%83%E8%80%83%E8%B3%87%E6%96%99/">Read More</a></div>
 </article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/posts/c#/"></a>
-    </h1><div class="post-meta"><span class="post-author"><a href="https://www.knsh.com.tw" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Peter</a></span>&nbsp;<span class="post-publish">published on <time datetime="0001-01-01">0001-01-01</time></span></div><div class="content">資料轉 int https://www.coder.work/article/958601
-控 word https://ithelp.ithome.com.tw/articles/10229663</div><div class="post-footer">
-        <a href="/posts/c#/">Read More</a></div>
+        <a href="/posts/vim-tips/">Vim tips</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="https://www.knsh.com.tw" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Peter</a></span>&nbsp;<span class="post-publish">published on <time datetime="2021-11-16">2021-11-16</time></span></div><div class="content">https://stackoverflow.com/questions/7163947/paste-multiple-times/7164121#7164121
+https://stackoverflow.com/users/457352/benoit ctrl-r &quot; https://stackoverflow.com/questions/3997078/how-to-paste-yanked-text-into-the-vim-command-line
+https://vi.stackexchange.com/questions/22827/paste-append-multiple-lines
+scroll ( C-E / C-Y 上下卷一行, C-D C-U 上下卷半頁, * 下找 # 上找 , zt zz zb 放上中下 % 方括+大括 找尋配對區塊 ) http://vimdoc.sourceforge.net/htmldoc/scroll.html
+https://vim.fandom.com/wiki/Moving_to_matching_braces
+:5,10 co . https://alvinalexander.com/linux/vi-vim-copy-paste-command/
+vim autocomplete youcompleteme http://lausai360.blogspot.com/2017/04/youcompleteme-vim-omnicomplete.html https://timothyqiu.com/archives/using-omnicomplete-for-c-cplusplus-in-vim https://en.terminalroot.com.br/how-to-customize-your-vim-from-zero-to-c-cpp-ubuntu-cinnamon/
+有機會把它翻成中文
+https://stackoverflow.com/questions/3997078/how-to-paste-yanked-text-into-the-vim-command-line
+How to paste yanked text into the Vim command line Yes. Hit Ctrl-R then &ldquo;. If you have literal control characters in what you have yanked, use Ctrl-R, Ctrl-O, &ldquo;.</div><div class="post-footer">
+        <a href="/posts/vim-tips/">Read More</a></div>
 </article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/posts/functional-program/"></a>
-    </h1><div class="post-meta"><span class="post-author"><a href="https://www.knsh.com.tw" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Peter</a></span>&nbsp;<span class="post-publish">published on <time datetime="0001-01-01">0001-01-01</time></span></div><div class="content">保哥的 [[Javascript]] functional programming https://blog.miniasp.com/post/2016/12/10/Functional-Programming-in-JavaScript 有簡單的JS三個 func 介紹，同時也有一些相關的連結與破關小遊戲可以使用，是很好的參考資料</div><div class="post-footer">
-        <a href="/posts/functional-program/">Read More</a></div>
+        <a href="/posts/%E9%9D%9E%E6%9A%B4%E5%8A%9B%E6%BA%9D%E9%80%9A/">非暴力溝通的筆記</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="https://www.knsh.com.tw" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Peter</a></span>&nbsp;<span class="post-publish">published on <time datetime="2021-09-23">2021-09-23</time></span></div><div class="content">[非暴力溝通的筆記]
+(1) 非暴力溝通 (Non Violent Communication, NVC) 不是學習一套溝通的話術
+重點在創造彼此有品質的連結
+通過同理心來自我同理, 和 同理他人.
+你不一定要對每個人都用 NVC
+(2) 溝通最重要的是你的意圖, 意圖不良, 即使用 NVC 溝通, 也是暴力溝通
+(3) 學習 NVC 最難的地方在於改變習慣, 改變同理的想法, 這是最大的挑戰
+(4) 你要先照顧好自己, 才能同理別人. 當你沒辦法照顧好自己, 就不要用 NVC 去照顧別人
+(5) NVC 不是要你做出選擇, 自己和別人的需求都不能被犧牲.
+(6) 對於一件事情, 你可能會不只有一種情緒. 不同人對相同的事情, 會有不同的情緒.
+(7) 假感受: 你描述對方怎麼對待你. 但是這不是你的感受
+( 當你遇到一件事情時, 你先提你看到的觀察 (fact), 再問他的感受, 再詢問他的需求
+(9) 看事情不看對錯, 只看需求. 你會得不同的世界
+(10) 先同理: 了解對方的感受和需求, 再說明你的需求, 最後才提出你的請求
+(11) 請求不一定會對方接受, 對方可以拒絕. 否則你的請求就變成是命令
+(12) 長頸鹿和胡狼
+https://www.zendream13.com/3826338968405753548635328.html
+https://lisakuang01.blogspot.com/2017/06/blog-post_47.html</div><div class="post-footer">
+        <a href="/posts/%E9%9D%9E%E6%9A%B4%E5%8A%9B%E6%BA%9D%E9%80%9A/">Read More</a></div>
 </article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/posts/git/"></a>
-    </h1><div class="post-meta"><span class="post-author"><a href="https://www.knsh.com.tw" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Peter</a></span>&nbsp;<span class="post-publish">published on <time datetime="0001-01-01">0001-01-01</time></span></div><div class="content">如何解決在命令提示字元下使用 Git for Windows 顯示中文亂碼的問題 </div><div class="post-footer">
-        <a href="/posts/git/">Read More</a></div>
+        <a href="/posts/%E7%AE%A1%E7%90%86/">管理</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="https://www.knsh.com.tw" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Peter</a></span>&nbsp;<span class="post-publish">published on <time datetime="2021-09-17">2021-09-17</time></span></div><div class="content">書 《天下》明茲伯格談管理 經理人的一天( https://www.ruten.com.tw/item/show?22136016506765
+《培生集團》MBA≠經理人(全1冊)明茲伯格【頭大大-財經】八09◎BR8 https://www.ruten.com.tw/item/show?22137148116983
+&ldquo;明茲伯格&quot;相關商品共 21筆 https://www.ruten.com.tw/find/?q=%E6%98%8E%E8%8C%B2%E4%BC%AF%E6%A0%BC
+明茲伯格策略管理 https://www.books.com.tw/products/0010351163?sloc=main
+有三本書 https://tkbpeter.pixnet.net/blog/post/
+https://www.google.com/search?client=firefox-b-d&q=mintzberg.org+managingmodel+%E7%9C%8B
+https://www.books.com.tw/web/sys_serialtext/?item=0010515462&page=4
+https://www.wensread.com/henry-mintzberg-managing/?fbclid=IwAR1NCudhgccT4jP1lMj_TIE-S9muaSqhuRHZRnlwYszRAgdznWV_jpZyuoA</div><div class="post-footer">
+        <a href="/posts/%E7%AE%A1%E7%90%86/">Read More</a></div>
 </article><ul class="pagination"><li class="page-item active">
                     <span class="page-link">
                         <a href="/">1</a>
@@ -105,12 +129,6 @@ https://zh.wikipedia.org/zh-tw/%E4%BE%9D%E8%B5%96%E6%B3%A8%E5%85%A5</div><div cl
                 </li><li class="page-item ">
                     <span class="page-link">
                         <a href="/page/3/">3</a>
-                    </span>
-                </li><li class="page-item ">
-                    <span class="page-link" aria-hidden="true">&hellip;</span>
-                </li><li class="page-item ">
-                    <span class="page-link">
-                        <a href="/page/11/">11</a>
                     </span>
                 </li></ul></div></div>
             </main><footer class="footer">

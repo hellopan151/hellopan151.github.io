@@ -1,0 +1,24 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Development - Tag - 筆記</title>
+        <link>https://hellopan151.github.io/tags/development/</link>
+        <description>Development - Tag - 筆記</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-TW</language><managingEditor>hellopan@gmail.com (Peter)</managingEditor>
+            <webMaster>hellopan@gmail.com (Peter)</webMaster><copyright>Peter Pan</copyright><lastBuildDate>Thu, 05 Jan 2023 19:51:20 &#43;0800</lastBuildDate><atom:link href="https://hellopan151.github.io/tags/development/" rel="self" type="application/rss+xml" /><item>
+    <title>Ansible</title>
+    <link>https://hellopan151.github.io/posts/ansible_windows/</link>
+    <pubDate>Thu, 05 Jan 2023 19:51:20 &#43;0800</pubDate>
+    <author>Peter</author>
+    <guid>https://hellopan151.github.io/posts/ansible_windows/</guid>
+    <description><![CDATA[如何在 windows 上面安裝 ansible 的客戶端]]></description>
+</item>
+<item>
+    <title>Git</title>
+    <link>https://hellopan151.github.io/posts/git/</link>
+    <pubDate>Tue, 07 Sep 2021 17:47:20 &#43;0800</pubDate>
+    <author>Peter</author>
+    <guid>https://hellopan151.github.io/posts/git/</guid>
+    <description><![CDATA[git 筆記 差異比對 使用 git diff 來取得目錄之間的差異 git diff 預設以目前的工作目錄為主，其次以目前的所在的 checkout 為次 git diff -&gt; 工作目錄 vs Stage ( 已經在 stage 追縱的檔案 ) git diff]]></description>
+</item>
+</channel>
+</rss>

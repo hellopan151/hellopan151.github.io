@@ -1,145 +1,88 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>All Posts - My New Hugo Site</title>
-        <link>http://example.org/posts/</link>
-        <description>All Posts | My New Hugo Site</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>peterpan@knsh.com.tw (Peter)</managingEditor>
-            <webMaster>peterpan@knsh.com.tw (Peter)</webMaster><lastBuildDate>Sat, 07 Jan 2023 08:32:28 &#43;0800</lastBuildDate><atom:link href="http://example.org/posts/" rel="self" type="application/rss+xml" /><item>
-    <title>Openssh_csr</title>
-    <link>http://example.org/posts/openssh_csr/</link>
+        <title>All Posts - 筆記</title>
+        <link>https://hellopan151.github.io/posts/</link>
+        <description>All Posts | 筆記</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-TW</language><managingEditor>hellopan@gmail.com (Peter)</managingEditor>
+            <webMaster>hellopan@gmail.com (Peter)</webMaster><copyright>Peter Pan</copyright><lastBuildDate>Sat, 07 Jan 2023 08:32:28 &#43;0800</lastBuildDate><atom:link href="https://hellopan151.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>OpenSSL CSR</title>
+    <link>https://hellopan151.github.io/posts/openssl_csr/</link>
     <pubDate>Sat, 07 Jan 2023 08:32:28 &#43;0800</pubDate>
     <author>Peter</author>
-    <guid>http://example.org/posts/openssh_csr/</guid>
-    <description><![CDATA[SSL CSR 產生方式 在 linux / bash 之中使用以下指令
-openssl req -new -newkey rsa:2048 -nodes -keyout star.domain.com.tw.key -out star.domain.com.tw.csr -subj &#34;/C=TW/ST=TAIWAN/L=TAIPEI/O=公司英文名/OU=部門英文名/CN=*.domain.com.tw&#34; openssl req -new -newkey rsa:2048 -nodes -keyout www.domain.com.tw.key -out www.domain.com.tw.csr -subj &#34;/C=TW/ST=TAIWAN/L=TAIPEI/O=公司英文名/OU=部門英文名/CN=www.domain.com.tw&#34; 直接產出 key 以及 CSR，打包加密碼後，寄給廠商，請廠商代為向原廠申請 SSL ，請廠商提供以下三種格式︰
-nginx iis domino ]]></description>
+    <guid>https://hellopan151.github.io/posts/openssl_csr/</guid>
+    <description><![CDATA[SSL CSR 產生方式]]></description>
 </item>
 <item>
     <title>Ansible</title>
-    <link>http://example.org/posts/ansible/</link>
+    <link>https://hellopan151.github.io/posts/ansible_windows/</link>
     <pubDate>Thu, 05 Jan 2023 19:51:20 &#43;0800</pubDate>
     <author>Peter</author>
-    <guid>http://example.org/posts/ansible/</guid>
-    <description><![CDATA[如何在 windows 上面安裝 ansible 的客戶端 # Setup WinRM # https://www.ansiblepilot.com/articles/configure-a-windows-host-for-ansible-ansible-winrm/ $url = &#34;https://raw.githubusercontent.com/ansible/ansible/devel/examples/scripts/ConfigureRemotingForAnsible.ps1&#34; $file = &#34;$env:temp\ConfigureRemotingForAnsible.ps1&#34; (New-Object -TypeName System.Net.WebClient).DownloadFile($url, $file) powershell.exe -ExecutionPolicy ByPass -File $file 如何在 linux 上面連到 windows inventory.yaml
-[defaults] inventory = inventory remote_user = peter host_key_checking = False inventory
-[windows] bee ansible_host=192.168.21.118 ansible_user=Administrator ansible_password=&#34;password&#34; dolphin ansible_host=192.168.21.130 ansible_user=Administrator ansible_password=&#34;password&#34; ant ansible_host=192.168.21.116 ansible_user=Administrator ansible_password=&#34;password&#34; seal ansible_host=192.168.21.131 ansible_user=Administrator ansible_password=&#34;password&#34; spider ansible_host=192.168.21.115 ansible_user=Administrator ansible_password=&#34;password&#34; whale ansible_host=192.168.21.132 ansible_user=Administrator ansible_password=&#34;password&#34; client_test ansible_host=192.168.21.206 ansible_user=Administrator ansible_password=&#34;password&#34; [windows:vars] ansible_port=5986 #ansible_port=5985 ansible_connection=winrm ansible_winrm_transport=basic ansible_winrm_server_cert_validation=ignore win_hosts.]]></description>
-</item>
-<item>
-    <title>設計模式的參考資料</title>
-    <link>http://example.org/posts/%E8%A8%AD%E8%A8%88%E6%A8%A1%E5%BC%8F%E7%9A%84%E5%8F%83%E8%80%83%E8%B3%87%E6%96%99/</link>
-    <pubDate>Sun, 11 Sep 2022 10:24:00 &#43;0800</pubDate>
-    <author>Peter</author>
-    <guid>http://example.org/posts/%E8%A8%AD%E8%A8%88%E6%A8%A1%E5%BC%8F%E7%9A%84%E5%8F%83%E8%80%83%E8%B3%87%E6%96%99/</guid>
-    <description><![CDATA[<h1 id="控制反轉">控制反轉</h1>]]></description>
-</item>
-<item>
-    <title>Vim tips</title>
-    <link>http://example.org/posts/vim-tips/</link>
-    <pubDate>Tue, 16 Nov 2021 16:28:20 &#43;0800</pubDate>
-    <author>Peter</author>
-    <guid>http://example.org/posts/vim-tips/</guid>
-    <description><![CDATA[https://stackoverflow.com/questions/7163947/paste-multiple-times/7164121#7164121
-https://stackoverflow.com/users/457352/benoit ctrl-r &quot; https://stackoverflow.com/questions/3997078/how-to-paste-yanked-text-into-the-vim-command-line
-https://vi.stackexchange.com/questions/22827/paste-append-multiple-lines
-scroll ( C-E / C-Y 上下卷一行, C-D C-U 上下卷半頁, * 下找 # 上找 , zt zz zb 放上中下 % 方括+大括 找尋配對區塊 ) http://vimdoc.sourceforge.net/htmldoc/scroll.html
-https://vim.fandom.com/wiki/Moving_to_matching_braces
-:5,10 co . https://alvinalexander.com/linux/vi-vim-copy-paste-command/
-vim autocomplete youcompleteme http://lausai360.blogspot.com/2017/04/youcompleteme-vim-omnicomplete.html https://timothyqiu.com/archives/using-omnicomplete-for-c-cplusplus-in-vim https://en.terminalroot.com.br/how-to-customize-your-vim-from-zero-to-c-cpp-ubuntu-cinnamon/
-有機會把它翻成中文
-https://stackoverflow.com/questions/3997078/how-to-paste-yanked-text-into-the-vim-command-line
-How to paste yanked text into the Vim command line Yes. Hit Ctrl-R then &ldquo;. If you have literal control characters in what you have yanked, use Ctrl-R, Ctrl-O, &ldquo;.]]></description>
+    <guid>https://hellopan151.github.io/posts/ansible_windows/</guid>
+    <description><![CDATA[如何在 windows 上面安裝 ansible 的客戶端]]></description>
 </item>
 <item>
     <title>非暴力溝通的筆記</title>
-    <link>http://example.org/posts/%E9%9D%9E%E6%9A%B4%E5%8A%9B%E6%BA%9D%E9%80%9A/</link>
+    <link>https://hellopan151.github.io/posts/%E9%9D%9E%E6%9A%B4%E5%8A%9B%E6%BA%9D%E9%80%9A/</link>
     <pubDate>Thu, 23 Sep 2021 09:11:20 &#43;0800</pubDate>
     <author>Peter</author>
-    <guid>http://example.org/posts/%E9%9D%9E%E6%9A%B4%E5%8A%9B%E6%BA%9D%E9%80%9A/</guid>
-    <description><![CDATA[[非暴力溝通的筆記]
-(1) 非暴力溝通 (Non Violent Communication, NVC) 不是學習一套溝通的話術
-重點在創造彼此有品質的連結
-通過同理心來自我同理, 和 同理他人.
-你不一定要對每個人都用 NVC
-(2) 溝通最重要的是你的意圖, 意圖不良, 即使用 NVC 溝通, 也是暴力溝通
-(3) 學習 NVC 最難的地方在於改變習慣, 改變同理的想法, 這是最大的挑戰
-(4) 你要先照顧好自己, 才能同理別人. 當你沒辦法照顧好自己, 就不要用 NVC 去照顧別人
-(5) NVC 不是要你做出選擇, 自己和別人的需求都不能被犧牲.
-(6) 對於一件事情, 你可能會不只有一種情緒. 不同人對相同的事情, 會有不同的情緒.
-(7) 假感受: 你描述對方怎麼對待你. 但是這不是你的感受
-( 當你遇到一件事情時, 你先提你看到的觀察 (fact), 再問他的感受, 再詢問他的需求
-(9) 看事情不看對錯, 只看需求. 你會得不同的世界
-(10) 先同理: 了解對方的感受和需求, 再說明你的需求, 最後才提出你的請求
-(11) 請求不一定會對方接受, 對方可以拒絕. 否則你的請求就變成是命令
-(12) 長頸鹿和胡狼
-https://www.zendream13.com/3826338968405753548635328.html
-https://lisakuang01.blogspot.com/2017/06/blog-post_47.html]]></description>
-</item>
-<item>
-    <title>管理</title>
-    <link>http://example.org/posts/%E7%AE%A1%E7%90%86/</link>
-    <pubDate>Fri, 17 Sep 2021 16:50:20 &#43;0800</pubDate>
-    <author>Peter</author>
-    <guid>http://example.org/posts/%E7%AE%A1%E7%90%86/</guid>
-    <description><![CDATA[書 《天下》明茲伯格談管理 經理人的一天( https://www.ruten.com.tw/item/show?22136016506765
-《培生集團》MBA≠經理人(全1冊)明茲伯格【頭大大-財經】八09◎BR8 https://www.ruten.com.tw/item/show?22137148116983
-&ldquo;明茲伯格&quot;相關商品共 21筆 https://www.ruten.com.tw/find/?q=%E6%98%8E%E8%8C%B2%E4%BC%AF%E6%A0%BC
-明茲伯格策略管理 https://www.books.com.tw/products/0010351163?sloc=main
-有三本書 https://tkbpeter.pixnet.net/blog/post/
-https://www.google.com/search?client=firefox-b-d&q=mintzberg.org+managingmodel+%E7%9C%8B
-https://www.books.com.tw/web/sys_serialtext/?item=0010515462&page=4
-https://www.wensread.com/henry-mintzberg-managing/?fbclid=IwAR1NCudhgccT4jP1lMj_TIE-S9muaSqhuRHZRnlwYszRAgdznWV_jpZyuoA]]></description>
+    <guid>https://hellopan151.github.io/posts/%E9%9D%9E%E6%9A%B4%E5%8A%9B%E6%BA%9D%E9%80%9A/</guid>
+    <description><![CDATA[[非暴力溝通的筆記] (1) 非暴力溝通 (Non Violent Communication, NVC) 不是學習一套溝通的話術 重點在創造彼此有品質的連結 通過同理心來自我同理, 和 同理他人. 你不一定要對每個人]]></description>
 </item>
 <item>
     <title>開發工具以及環境設置</title>
-    <link>http://example.org/posts/%E9%96%8B%E7%99%BC%E5%B7%A5%E5%85%B7%E4%BB%A5%E5%8F%8A%E7%92%B0%E5%A2%83%E8%A8%AD%E7%BD%AE/</link>
+    <link>https://hellopan151.github.io/posts/%E9%96%8B%E7%99%BC%E5%B7%A5%E5%85%B7%E4%BB%A5%E5%8F%8A%E7%92%B0%E5%A2%83%E8%A8%AD%E7%BD%AE/</link>
     <pubDate>Tue, 07 Sep 2021 17:57:20 &#43;0800</pubDate>
     <author>Peter</author>
-    <guid>http://example.org/posts/%E9%96%8B%E7%99%BC%E5%B7%A5%E5%85%B7%E4%BB%A5%E5%8F%8A%E7%92%B0%E5%A2%83%E8%A8%AD%E7%BD%AE/</guid>
-    <description><![CDATA[分享我的 Windows Server 2022 裝機必備軟體與安裝筆記 Will 保哥的開發人員工具軟體清單 ( 最新 2017 年版 ) 分享一組我在 Azure 建立 Windows VM 都會執行的初始設定腳本 建立 R 開發環境：起手式 關於 Linux 下 Bash 與 Zsh 啟動檔的載入順序研究 ]]></description>
+    <guid>https://hellopan151.github.io/posts/%E9%96%8B%E7%99%BC%E5%B7%A5%E5%85%B7%E4%BB%A5%E5%8F%8A%E7%92%B0%E5%A2%83%E8%A8%AD%E7%BD%AE/</guid>
+    <description><![CDATA[分享我的 Windows Server 2022 裝機必備軟體與安裝筆記 Will 保哥的開發人員工具軟體清單 ( 最新 2017 年版 ) 分享一組我在 Azure 建立 Windows VM 都會執行的初始設定腳本 建立 R 開發環境：起]]></description>
 </item>
 <item>
     <title>編譯器</title>
-    <link>http://example.org/posts/%E7%B7%A8%E8%AD%AF%E5%99%A8/</link>
+    <link>https://hellopan151.github.io/posts/%E7%B7%A8%E8%AD%AF%E5%99%A8/</link>
     <pubDate>Tue, 07 Sep 2021 17:56:20 &#43;0800</pubDate>
     <author>Peter</author>
-    <guid>http://example.org/posts/%E7%B7%A8%E8%AD%AF%E5%99%A8/</guid>
-    <description><![CDATA[自製編譯器不求人：快速上手 ANTLR 與 .NET 開發環境設定 新手上路 C# 原始碼產生器 (Source Generators) ]]></description>
+    <guid>https://hellopan151.github.io/posts/%E7%B7%A8%E8%AD%AF%E5%99%A8/</guid>
+    <description><![CDATA[自製編譯器不求人：快速上手 ANTLR 與 .NET 開發環境設定 新手上路 C# 原始碼產生器 (Source Generators)]]></description>
 </item>
 <item>
-    <title>用 Markdown Monster 寫部落格</title>
-    <link>http://example.org/posts/markdown-%E8%AA%9E%E6%B3%95%E5%8F%83%E8%80%83%E8%B3%87%E6%96%99/</link>
-    <pubDate>Tue, 07 Sep 2021 17:45:20 &#43;0800</pubDate>
+    <title>Git</title>
+    <link>https://hellopan151.github.io/posts/git/</link>
+    <pubDate>Tue, 07 Sep 2021 17:47:20 &#43;0800</pubDate>
     <author>Peter</author>
-    <guid>http://example.org/posts/markdown-%E8%AA%9E%E6%B3%95%E5%8F%83%E8%80%83%E8%B3%87%E6%96%99/</guid>
-    <description><![CDATA[完整語法 Markdown 語法
-Markdown 語法原始碼
-HackPad 的模版 模版
-快速模版原理
-用 Markdown Monster 寫部落格 https://blog.darkthread.net/blog/blogging-with-markdown-monster/ 也有參考資料待整理]]></description>
+    <guid>https://hellopan151.github.io/posts/git/</guid>
+    <description><![CDATA[git 筆記 差異比對 使用 git diff 來取得目錄之間的差異 git diff 預設以目前的工作目錄為主，其次以目前的所在的 checkout 為次 git diff -&gt; 工作目錄 vs Stage ( 已經在 stage 追縱的檔案 ) git diff]]></description>
 </item>
 <item>
     <title>Markdown 語法</title>
-    <link>http://example.org/posts/markdown-%E8%AA%9E%E6%B3%95/</link>
+    <link>https://hellopan151.github.io/posts/markdown-%E8%AA%9E%E6%B3%95/</link>
     <pubDate>Wed, 01 Sep 2021 11:15:20 &#43;0800</pubDate>
     <author>Peter</author>
-    <guid>http://example.org/posts/markdown-%E8%AA%9E%E6%B3%95/</guid>
-    <description><![CDATA[https://markdown.tw/
-Markdown: Syntax 概述 哲學 行內 HTML 特殊字元自動轉換 區塊元素 段落和換行 標題 區塊引言 清單 程式碼區塊 分隔線 區段元素 連結 強調 程式碼 圖片 其他 跳脫字元 自動連結 感謝 **注意：**這份文件是用Markdown寫的，你可以看看它的原始檔 。
-概述 哲學 Markdown的目標是實現「易讀易寫」。
-不過最需要強調的便是它的可讀性。一份使用Markdown格式撰寫的文件應該可以直接以純文字發佈，並且看起來不會像是由許多標籤或是格式指令所構成。Markdown語法受到一些既有text-to-HTML格式的影響，包括Setext、atx、Textile、reStructuredText、Grutatext 和 EtText，然而最大靈感來源其實是純文字的電子郵件格式。
-因此Markdown的語法全由標點符號所組成，並經過嚴謹慎選，是為了讓它們看起來就像所要表達的意思。像是在文字兩旁加上星號，看起來就像強調。Markdown的清單看起來，嗯，就是清單。假如你有使用過電子郵件，區塊引言看起來就真的像是引用一段文字。
-行內HTML Markdown的語法有個主要的目的：用來作為一種網路內容的_寫作_用語言。
-Markdown不是要來取代HTML，甚至也沒有要和它相似，它的語法種類不多，只和HTML的一部分有關係，重點_不是_要創造一種更容易寫作HTML文件的語法，我認為HTML已經很容易寫了，Markdow的重點在於，它能讓文件更容易閱讀、編寫。HTML 是一種_發佈_的格式，Markdown是一種_編寫_的格式，因此，Markdown的格式語法只涵蓋純文字可以涵蓋的範圍。
-不在Markdown涵蓋範圍之外的標籤，都可以直接在文件裡面用HTML撰寫。不需要額外標註這是HTML或是Markdown；只要直接加標籤就可以了。
-只有區塊元素──比如&lt;div&gt;、&lt;table&gt;、&lt;pre&gt;、&lt;p&gt;等標籤，必需在前後加上空行，以利與內容區隔。而且這些（元素）的開始與結尾標籤，不可以用tab或是空白來縮排。Markdown的產生器有智慧型判斷，可以避免在區塊標籤前後加上沒有必要的&lt;p&gt;標籤。
-舉例來說，在Markdown文件裡加上一段HTML表格：
-This is a regular paragraph. &lt;table&gt; &lt;tr&gt; &lt;td&gt;Foo&lt;/td&gt; &lt;/tr&gt; &lt;/table&gt; This is another regular paragraph. 請注意，Markdown語法在HTML區塊標籤中將不會被進行處理。例如，你無法在HTML區塊內使用Markdown形式的*強調*。
-HTML的區段標籤如&lt;span&gt;、&lt;cite&gt;、&lt;del&gt;則不受限制，可以在Markdown的段落、清單或是標題裡任意使用。依照個人習慣，甚至可以不用Markdown格式，而採用HTML標籤來格式化。舉例說明：如果比較喜歡HTML的 &lt;a&gt;或&lt;img&gt;標籤，可以直接使用這些標籤，而不用Markdown提供的連結或是影像標示語法。
-HTML區段標籤和區塊標籤不同，在區段標籤的範圍內，Markdown的語法是有效的。
-特殊字元自動轉換 在HTML文件中，有兩個字元需要特殊處理：&lt;和&amp;。&lt;符號用於起始標籤&amp;符號則用於標記HTML實體，如果你只是想要使用這些符號，你必須要使用實體的形式，像是&amp;lt;和&amp;amp;。
-&amp; 符號其實很容易讓寫作網路文件的人感到困擾，如果你要打「AT&amp;T」 ，你必須要寫成「AT&amp;amp;T」 ，還得轉換網址內的 &amp; 符號，如果你要連結到：
-http://images.google.com/images?num=30&amp;q=larry+bird 你必須要把網址轉成：
-http://images.google.com/images?num=30&amp;amp;q=larry+bird 才能放到連結標籤的href屬性裡。不用說也知道這很容易忘記，這也可能是HTML標準檢查所檢查到的錯誤中，數量最多的。]]></description>
+    <guid>https://hellopan151.github.io/posts/markdown-%E8%AA%9E%E6%B3%95/</guid>
+    <description><![CDATA[https://markdown.tw/ Markdown: Syntax 概述 哲學 行內 HTML 特殊字元自動轉換 區塊元素 段落和換行 標題 區塊引言 清單 程式碼區塊 分隔線 區段元素 連結 強調 程式碼 圖片 其他 跳脫字元 自動連結 感謝 **]]></description>
+</item>
+<item>
+    <title>工作技巧與紀錄</title>
+    <link>https://hellopan151.github.io/posts/%E5%B7%A5%E4%BD%9C%E6%8A%80%E5%B7%A7%E8%88%87%E7%B4%80%E9%8C%84/</link>
+    <pubDate>Wed, 25 Aug 2021 16:03:20 &#43;0800</pubDate>
+    <author>Peter</author>
+    <guid>https://hellopan151.github.io/posts/%E5%B7%A5%E4%BD%9C%E6%8A%80%E5%B7%A7%E8%88%87%E7%B4%80%E9%8C%84/</guid>
+    <description><![CDATA[chrome headless 利用 chrome 取 vimeo 的截圖的命令 使用 excel 產出指令 取回截圖的 chrome headless 指令]]></description>
+</item>
+<item>
+    <title>工作系統</title>
+    <link>https://hellopan151.github.io/posts/%E5%B7%A5%E4%BD%9C%E7%B3%BB%E7%B5%B1/</link>
+    <pubDate>Wed, 25 Aug 2021 16:01:20 &#43;0800</pubDate>
+    <author>Peter</author>
+    <guid>https://hellopan151.github.io/posts/%E5%B7%A5%E4%BD%9C%E7%B3%BB%E7%B5%B1/</guid>
+    <description><![CDATA[想建立自己的工作系統 時間管理 工作 ( 組長的管理職, 個人的程式或工具, [[架構]], 包括機房,網路,流程 ) 個人 ( 程式, 編譯器, 直譯器, functional programming , 資料]]></description>
+</item>
+<item>
+    <title>取回截圖的 chrome headless 指令</title>
+    <link>https://hellopan151.github.io/posts/%E5%8F%96%E5%9B%9E%E6%88%AA%E5%9C%96%E7%9A%84-chrome-headless-%E6%8C%87%E4%BB%A4/</link>
+    <pubDate>Wed, 25 Aug 2021 15:59:20 &#43;0800</pubDate>
+    <author>Peter</author>
+    <guid>https://hellopan151.github.io/posts/%E5%8F%96%E5%9B%9E%E6%88%AA%E5%9C%96%E7%9A%84-chrome-headless-%E6%8C%87%E4%BB%A4/</guid>
+    <description><![CDATA[excel video list ( B 欄 ) https://player.vimeo.com/video/111 https://player.vimeo.com/video/222 capture file ( C 欄 ) =RIGHT(B2, LEN(B2)-SEARCH(&quot;/&quot;, B2,30) ) &amp; &ldquo;.png&rdquo; 結果會是: 111.png 參數 ( D 欄 ) =&ldquo;chrome.exe &ndash;headless &ndash;disable-gpu &quot; &amp; &quot; &ndash;screenshot=&rdquo; &amp; &ldquo;c:\temp&quot; &amp; C2 &amp; &quot; &quot; &amp; B2 結果會是: chrome.exe &ndash;headless &ndash;disable-gpu &ndash;screenshot=c:\temp\111.png https://player.vimeo.com/video/111]]></description>
 </item>
 </channel>
 </rss>

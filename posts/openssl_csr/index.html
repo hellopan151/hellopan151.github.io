@@ -27,7 +27,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/hellopan151.github.io\/posts\/openssl_csr\/"
-        },"genre": "posts","keywords": "DevOps, Linux, OpenSSL","wordcount":  298 ,
+        },"genre": "posts","keywords": "DevOps, Linux, OpenSSL","wordcount":  370 ,
         "url": "https:\/\/hellopan151.github.io\/posts\/openssl_csr\/","datePublished": "2023-01-07T08:32:28+08:00","dateModified": "2023-01-07T08:32:28+08:00","license": "Peter Pan","publisher": {
             "@type": "Organization",
             "name": ""},"author": {
@@ -69,7 +69,7 @@
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">OpenSSL CSR</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="https://hellopan151.github.io/" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Peter</a></span>&nbsp;<span class="post-category">included in <a href="/categories/devops/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>DevOps</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2023-01-07">2023-01-07</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;298 words&nbsp;
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2023-01-07">2023-01-07</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;370 words&nbsp;
                 <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;One minute&nbsp;</div>
         </div><div class="details toc" id="toc-static"  data-kept="">
                 <div class="details-summary toc-title">
@@ -86,7 +86,14 @@
 </span></span></code></pre></div><p>重點︰加上 subject 的區段，可以不經過交互過程而產出資料。</p>
 <p>另一個可以參考的範例是利用 config 檔案來產出 csr</p>
 <p><a href="https://jianiau.blogspot.com/2015/07/openssl-generate-csr.html" target="_blank" rel="noopener noreffer ">OpenSSL 操作筆記 - 產生 CSR</a></p>
-<p><a href="https://blog.miniasp.com/post/2022/06/14/How-to-request-new-tls-certificate-using-OpenSSL" target="_blank" rel="noopener noreffer ">保哥的筆記 - 如何使用 OpenSSL 工具產製 CSR 憑證要求檔並成功申請正式 TLS 憑證</a></p></div><div class="post-footer" id="post-footer">
+<p><a href="https://blog.miniasp.com/post/2022/06/14/How-to-request-new-tls-certificate-using-OpenSSL" target="_blank" rel="noopener noreffer ">保哥的筆記 - 如何使用 OpenSSL 工具產製 CSR 憑證要求檔並成功申請正式 TLS 憑證</a></p>
+<h1 id="在-windows-iis-的方式">在 windows IIS 的方式</h1>
+<ol>
+<li>先在 IIS 提出 CSR ，將 CSR 傳給憑證代理商</li>
+<li>代理商以電話、電子郵件或是 DNS 的方式向公司做確認</li>
+<li>代理商將憑證傳回</li>
+<li>我方將它轉成 pfx 格式，並滙回原來的 IIS 網站</li>
+</ol></div><div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">
             <div class="post-info-mod">

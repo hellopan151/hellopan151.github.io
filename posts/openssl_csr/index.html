@@ -91,20 +91,25 @@
 </span></span><span class="line"><span class="cl">openssl req -new -newkey rsa:2048 -nodes -keyout star.domain.com.tw.key -out star.domain.com.tw.csr -subj <span class="s2">&#34;/C=TW/ST=TAIWAN/L=TAIPEI/O=公司英文名/OU=部門英文名/CN=*.domain.com.tw&#34;</span>
 </span></span><span class="line"><span class="cl"><span class="c1"># www ssl ( single web site )</span>
 </span></span><span class="line"><span class="cl">openssl req -new -newkey rsa:2048 -nodes -keyout www.domain.com.tw.key -out www.domain.com.tw.csr -subj <span class="s2">&#34;/C=TW/ST=TAIWAN/L=TAIPEI/O=公司英文名/OU=部門英文名/CN=www.domain.com.tw&#34;</span>
-</span></span></code></pre></div><p><br>
-記得將網址以及合適的資訊放在 subject 的區段。</p>
-<p><br>
-reference:</p>
+</span></span></code></pre></div><p><code> </code><br>
+<code> </code></p>
+<p>記得將網址以及合適的資訊放在 subject 的區段。</p>
+<p><code> </code><br>
+<code> </code></p>
+<p>reference:</p>
 <ol>
 <li><a href="https://www.digicert.com/kb/ssl-support/openssl-quick-reference-guide.htm" target="_blank" rel="noopener noreffer ">OpenSSL Quick Reference Guide</a></li>
 <li><a href="https://help.bizagi.com/bpm-suite/en/index.html?subjectaltname_support.htm" target="_blank" rel="noopener noreffer ">How to create a certificate using OpenSSL with Subject Alternative Name field (SAN)</a></li>
 <li>很棒的一本參考書︰ <a href="https://www.feistyduck.com/library/openssl-cookbook/" target="_blank" rel="noopener noreffer ">Openssl Cookbook</a></li>
 </ol>
+<p><code> </code><br>
+<code> </code></p>
 <hr>
 <h2 id="利用預先寫好的-config-方式--可參考-">利用預先寫好的 config 方式 ( 可參考 )</h2>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">openssl req -new -nodes -sha256 -utf8 -newkey rsa:2048 -keyout www.domain.com.tw.key -out www.domain.com.tw.csr -config domain.conf
-</span></span></code></pre></div><p><br>
-domain.conf 檔案內容如下</p>
+</span></span></code></pre></div><p><code> </code><br>
+<code> </code></p>
+<p>domain.conf 檔案內容如下</p>
 <pre tabindex="0"><code class="language-domain.conf" data-lang="domain.conf">[req]
 prompt = no
 default_md = sha256
@@ -121,8 +126,9 @@ OU = 部門英文名
 CN = www.domain.com.tw
 
 [v3_req]
-</code></pre><p><br>
-reference:</p>
+</code></pre><p><code> </code><br>
+<code> </code></p>
+<p>reference:</p>
 <ol>
 <li><a href="https://jianiau.blogspot.com/2015/07/openssl-generate-csr.html" target="_blank" rel="noopener noreffer ">OpenSSL 操作筆記 - 產生 CSR</a></li>
 <li><a href="https://blog.miniasp.com/post/2022/06/14/How-to-request-new-tls-certificate-using-OpenSSL" target="_blank" rel="noopener noreffer ">保哥的筆記 - 如何使用 OpenSSL 工具產製 CSR 憑證要求檔並成功申請正式 TLS 憑證</a></li>
@@ -135,7 +141,8 @@ reference:</p>
 <li>代理商將憑證傳回</li>
 <li>我方將它轉成 pfx 格式，並滙回原來的 IIS 網站</li>
 </ol>
-<p><br>
+<p><code> </code><br>
+<code> </code><br>
 reference:</p>
 <ol>
 <li><a href="https://www.digicert.com/kb/csr-creation-ssl-installation-iis-10.htm" target="_blank" rel="noopener noreffer ">https://www.digicert.com/kb/csr-creation-ssl-installation-iis-10.htm</a></li>

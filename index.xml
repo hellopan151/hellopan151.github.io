@@ -4,15 +4,15 @@
         <link>https://hellopan151.github.io/</link>
         <description>走在當下</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-TW</language><managingEditor>hellopan@gmail.com (Peter)</managingEditor>
-            <webMaster>hellopan@gmail.com (Peter)</webMaster><copyright>Peter Pan</copyright><lastBuildDate>Sat, 07 Jan 2023 08:32:28 &#43;0800</lastBuildDate>
+            <webMaster>hellopan@gmail.com (Peter)</webMaster><copyright>Peter Pan</copyright><lastBuildDate>Tue, 07 Mar 2023 19:18:28 &#43;0800</lastBuildDate>
             <atom:link href="https://hellopan151.github.io/index.xml" rel="self" type="application/rss+xml" />
         <item>
     <title>OpenSSL CSR</title>
     <link>https://hellopan151.github.io/posts/openssl_csr/</link>
-    <pubDate>Sat, 07 Jan 2023 08:32:28 &#43;0800</pubDate>
+    <pubDate>Tue, 07 Mar 2023 19:18:28 &#43;0800</pubDate>
     <author>Peter</author>
     <guid>https://hellopan151.github.io/posts/openssl_csr/</guid>
-    <description><![CDATA[SSL CSR 產生方式]]></description>
+    <description><![CDATA[<p>每年都要申請多個網站憑證，憑記憶輸入資料總是不確實，終於找到一行命令列就直接產出 CSR / Key 檔案的方式，每年只要執行一次就可以批次將檔案一口氣全部產出，方便又不容易出錯。</p>]]></description>
 </item>
 <item>
     <title>Ansible</title>

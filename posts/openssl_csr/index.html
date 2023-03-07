@@ -4,15 +4,15 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="robots" content="noodp" />
-        <title>OpenSSL CSR - 筆記</title><meta name="Description" content="SSL CSR 產生方式"><meta property="og:title" content="OpenSSL CSR" />
-<meta property="og:description" content="SSL CSR 產生方式" />
+        <title>OpenSSL CSR - 筆記</title><meta name="Description" content="OpenSSL CSR 產生方式。每年都要申請多個網站憑證，憑記憶輸入資料總是不確實，終於找到一行命令列就直接產出 CSR / Key 檔案的方式，每年只要執行一次就可以批次將檔案一口氣全部產出，方便又不容易出錯。"><meta property="og:title" content="OpenSSL CSR" />
+<meta property="og:description" content="OpenSSL CSR 產生方式。每年都要申請多個網站憑證，憑記憶輸入資料總是不確實，終於找到一行命令列就直接產出 CSR / Key 檔案的方式，每年只要執行一次就可以批次將檔案一口氣全部產出，方便又不容易出錯。" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://hellopan151.github.io/posts/openssl_csr/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2023-03-07T19:18:28+08:00" />
 <meta property="article:modified_time" content="2023-03-07T19:18:28+08:00" /><meta property="og:site_name" content="hellopan151" />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="OpenSSL CSR"/>
-<meta name="twitter:description" content="SSL CSR 產生方式"/>
+<meta name="twitter:description" content="OpenSSL CSR 產生方式。每年都要申請多個網站憑證，憑記憶輸入資料總是不確實，終於找到一行命令列就直接產出 CSR / Key 檔案的方式，每年只要執行一次就可以批次將檔案一口氣全部產出，方便又不容易出錯。"/>
 <meta name="application-name" content="My cool site">
 <meta name="apple-mobile-web-app-title" content="My cool site"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -33,7 +33,7 @@
             "name": ""},"author": {
                 "@type": "Person",
                 "name": "Peter"
-            },"description": "SSL CSR 產生方式"
+            },"description": "OpenSSL CSR 產生方式。每年都要申請多個網站憑證，憑記憶輸入資料總是不確實，終於找到一行命令列就直接產出 CSR / Key 檔案的方式，每年只要執行一次就可以批次將檔案一口氣全部產出，方便又不容易出錯。"
     }
     </script></head>
     <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('dark' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'dark' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>

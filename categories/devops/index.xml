@@ -12,5 +12,21 @@
     <guid>https://hellopan151.github.io/posts/openssl_csr/</guid>
     <description><![CDATA[<p>每年都要申請多個網站憑證，憑記憶輸入資料總是不確實，終於找到一行命令列就直接產出 CSR / Key 檔案的方式，每年只要執行一次就可以批次將檔案一口氣全部產出，方便又不容易出錯。</p>]]></description>
 </item>
+<item>
+    <title>Ansible</title>
+    <link>https://hellopan151.github.io/posts/ansible_windows/</link>
+    <pubDate>Thu, 05 Jan 2023 19:51:20 &#43;0800</pubDate>
+    <author>Peter</author>
+    <guid>https://hellopan151.github.io/posts/ansible_windows/</guid>
+    <description><![CDATA[如何在 windows 上面安裝 ansible 的客戶端]]></description>
+</item>
+<item>
+    <title>開發工具以及環境設置的網路文章</title>
+    <link>https://hellopan151.github.io/posts/windows_env_powershell_ref/</link>
+    <pubDate>Tue, 07 Sep 2021 17:57:20 &#43;0800</pubDate>
+    <author>Peter</author>
+    <guid>https://hellopan151.github.io/posts/windows_env_powershell_ref/</guid>
+    <description><![CDATA[<p>每次準備機器時，灌完 windows 後，總是要手工安裝一些固定的服務與軟體，不僅耗費許多時間，同時也會忘記某些特殊的設定，不如將它寫成 powershell 做成標準化程序，節費安裝時間與人工</p>]]></description>
+</item>
 </channel>
 </rss>

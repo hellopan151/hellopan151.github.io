@@ -21,28 +21,12 @@
     <description><![CDATA[如何在 windows 上面安裝 ansible 的客戶端]]></description>
 </item>
 <item>
-    <title>非暴力溝通的筆記</title>
-    <link>https://hellopan151.github.io/posts/%E9%9D%9E%E6%9A%B4%E5%8A%9B%E6%BA%9D%E9%80%9A/</link>
-    <pubDate>Thu, 23 Sep 2021 09:11:20 &#43;0800</pubDate>
-    <author>Peter</author>
-    <guid>https://hellopan151.github.io/posts/%E9%9D%9E%E6%9A%B4%E5%8A%9B%E6%BA%9D%E9%80%9A/</guid>
-    <description><![CDATA[[非暴力溝通的筆記] (1) 非暴力溝通 (Non Violent Communication, NVC) 不是學習一套溝通的話術 重點在創造彼此有品質的連結 通過同理心來自我同理, 和 同理他人. 你不一定要對每個人]]></description>
-</item>
-<item>
-    <title>開發工具以及環境設置</title>
-    <link>https://hellopan151.github.io/posts/%E9%96%8B%E7%99%BC%E5%B7%A5%E5%85%B7%E4%BB%A5%E5%8F%8A%E7%92%B0%E5%A2%83%E8%A8%AD%E7%BD%AE/</link>
+    <title>開發工具以及環境設置的網路文章</title>
+    <link>https://hellopan151.github.io/posts/windows_env_powershell_ref/</link>
     <pubDate>Tue, 07 Sep 2021 17:57:20 &#43;0800</pubDate>
     <author>Peter</author>
-    <guid>https://hellopan151.github.io/posts/%E9%96%8B%E7%99%BC%E5%B7%A5%E5%85%B7%E4%BB%A5%E5%8F%8A%E7%92%B0%E5%A2%83%E8%A8%AD%E7%BD%AE/</guid>
-    <description><![CDATA[分享我的 Windows Server 2022 裝機必備軟體與安裝筆記 Will 保哥的開發人員工具軟體清單 ( 最新 2017 年版 ) 分享一組我在 Azure 建立 Windows VM 都會執行的初始設定腳本 建立 R 開發環境：起]]></description>
-</item>
-<item>
-    <title>編譯器</title>
-    <link>https://hellopan151.github.io/posts/%E7%B7%A8%E8%AD%AF%E5%99%A8/</link>
-    <pubDate>Tue, 07 Sep 2021 17:56:20 &#43;0800</pubDate>
-    <author>Peter</author>
-    <guid>https://hellopan151.github.io/posts/%E7%B7%A8%E8%AD%AF%E5%99%A8/</guid>
-    <description><![CDATA[自製編譯器不求人：快速上手 ANTLR 與 .NET 開發環境設定 新手上路 C# 原始碼產生器 (Source Generators)]]></description>
+    <guid>https://hellopan151.github.io/posts/windows_env_powershell_ref/</guid>
+    <description><![CDATA[<p>每次準備機器時，灌完 windows 後，總是要手工安裝一些固定的服務與軟體，不僅耗費許多時間，同時也會忘記某些特殊的設定，不如將它寫成 powershell 做成標準化程序，節費安裝時間與人工</p>]]></description>
 </item>
 <item>
     <title>Git</title>
@@ -53,11 +37,11 @@
     <description><![CDATA[git 筆記 差異比對 使用 git diff 來取得目錄之間的差異 git diff 預設以目前的工作目錄為主，其次以目前的所在的 checkout 為次 git diff -&gt; 工作目錄 vs Stage ( 已經在 stage 追縱的檔案 ) git diff]]></description>
 </item>
 <item>
-    <title>Markdown 語法</title>
-    <link>https://hellopan151.github.io/posts/markdown-%E8%AA%9E%E6%B3%95/</link>
+    <title>Markdown 語法參考</title>
+    <link>https://hellopan151.github.io/posts/markdown-%E8%AA%9E%E6%B3%95%E5%8F%83%E8%80%83/</link>
     <pubDate>Wed, 01 Sep 2021 11:15:20 &#43;0800</pubDate>
     <author>Peter</author>
-    <guid>https://hellopan151.github.io/posts/markdown-%E8%AA%9E%E6%B3%95/</guid>
+    <guid>https://hellopan151.github.io/posts/markdown-%E8%AA%9E%E6%B3%95%E5%8F%83%E8%80%83/</guid>
     <description><![CDATA[https://markdown.tw/ Markdown: Syntax 概述 哲學 行內 HTML 特殊字元自動轉換 區塊元素 段落和換行 標題 區塊引言 清單 程式碼區塊 分隔線 區段元素 連結 強調 程式碼 圖片 其他 跳脫字元 自動連結 感謝 **]]></description>
 </item>
 <item>
@@ -69,20 +53,20 @@
     <description><![CDATA[chrome headless 利用 chrome 取 vimeo 的截圖的命令 使用 excel 產出指令 取回截圖的 chrome headless 指令]]></description>
 </item>
 <item>
-    <title>工作系統</title>
-    <link>https://hellopan151.github.io/posts/%E5%B7%A5%E4%BD%9C%E7%B3%BB%E7%B5%B1/</link>
-    <pubDate>Wed, 25 Aug 2021 16:01:20 &#43;0800</pubDate>
-    <author>Peter</author>
-    <guid>https://hellopan151.github.io/posts/%E5%B7%A5%E4%BD%9C%E7%B3%BB%E7%B5%B1/</guid>
-    <description><![CDATA[想建立自己的工作系統 時間管理 工作 ( 組長的管理職, 個人的程式或工具, [[架構]], 包括機房,網路,流程 ) 個人 ( 程式, 編譯器, 直譯器, functional programming , 資料]]></description>
-</item>
-<item>
     <title>取回截圖的 chrome headless 指令</title>
     <link>https://hellopan151.github.io/posts/%E5%8F%96%E5%9B%9E%E6%88%AA%E5%9C%96%E7%9A%84-chrome-headless-%E6%8C%87%E4%BB%A4/</link>
     <pubDate>Wed, 25 Aug 2021 15:59:20 &#43;0800</pubDate>
     <author>Peter</author>
     <guid>https://hellopan151.github.io/posts/%E5%8F%96%E5%9B%9E%E6%88%AA%E5%9C%96%E7%9A%84-chrome-headless-%E6%8C%87%E4%BB%A4/</guid>
     <description><![CDATA[excel video list ( B 欄 ) https://player.vimeo.com/video/111 https://player.vimeo.com/video/222 capture file ( C 欄 ) =RIGHT(B2, LEN(B2)-SEARCH(&quot;/&quot;, B2,30) ) &amp; &ldquo;.png&rdquo; 結果會是: 111.png 參數 ( D 欄 ) =&ldquo;chrome.exe &ndash;headless &ndash;disable-gpu &quot; &amp; &quot; &ndash;screenshot=&rdquo; &amp; &ldquo;c:\temp&quot; &amp; C2 &amp; &quot; &quot; &amp; B2 結果會是: chrome.exe &ndash;headless &ndash;disable-gpu &ndash;screenshot=c:\temp\111.png https://player.vimeo.com/video/111]]></description>
+</item>
+<item>
+    <title>利用 chrome 取 vimeo 的截圖的命令</title>
+    <link>https://hellopan151.github.io/posts/%E5%88%A9%E7%94%A8-chrome-%E5%8F%96-vimeo-%E7%9A%84%E6%88%AA%E5%9C%96%E7%9A%84%E5%91%BD%E4%BB%A4/</link>
+    <pubDate>Wed, 25 Aug 2021 15:54:20 &#43;0800</pubDate>
+    <author>Peter</author>
+    <guid>https://hellopan151.github.io/posts/%E5%88%A9%E7%94%A8-chrome-%E5%8F%96-vimeo-%E7%9A%84%E6%88%AA%E5%9C%96%E7%9A%84%E5%91%BD%E4%BB%A4/</guid>
+    <description><![CDATA[.\chrome.exe --headless --disable-gpu --screenshot=c:\temp\111.png https://player.vimeo.com/video/111 Start-Sleep -Seconds 5 .\chrome.exe --headless --disable-gpu --virtual-time-budget=20000 --screenshot=c:\temp\222.png https://player.vimeo.com/video/222 Start-Sleep -Seconds 20]]></description>
 </item>
 </channel>
 </rss>

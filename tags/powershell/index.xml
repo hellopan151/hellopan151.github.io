@@ -1,0 +1,16 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Powershell - Tag - 筆記</title>
+        <link>https://hellopan151.github.io/tags/powershell/</link>
+        <description>Powershell - Tag - 筆記</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-TW</language><managingEditor>hellopan@gmail.com (Peter)</managingEditor>
+            <webMaster>hellopan@gmail.com (Peter)</webMaster><copyright>Peter Pan</copyright><lastBuildDate>Tue, 07 Sep 2021 17:57:20 &#43;0800</lastBuildDate><atom:link href="https://hellopan151.github.io/tags/powershell/" rel="self" type="application/rss+xml" /><item>
+    <title>開發工具以及環境設置的網路文章</title>
+    <link>https://hellopan151.github.io/posts/windows_env_powershell_ref/</link>
+    <pubDate>Tue, 07 Sep 2021 17:57:20 &#43;0800</pubDate>
+    <author>Peter</author>
+    <guid>https://hellopan151.github.io/posts/windows_env_powershell_ref/</guid>
+    <description><![CDATA[<p>每次準備機器時，灌完 windows 後，總是要手工安裝一些固定的服務與軟體，不僅耗費許多時間，同時也會忘記某些特殊的設定，不如將它寫成 powershell 做成標準化程序，節費安裝時間與人工</p>]]></description>
+</item>
+</channel>
+</rss>
